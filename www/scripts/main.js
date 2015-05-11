@@ -1,22 +1,8 @@
-// ~1. Generate / retrieve docTypes list.
-// ~2. Generate svg (only small ones for now)
-// ~3. Preload all images
-// 4. Display
-// 5. Move and save positions
-// 6. Implements reload positions.
 
 var STAMP_TMPL = '<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="110px" height="110px" id="svg2" version="1.1"><g id="layer1"><rect style="fill:none;stroke:#6ea546;stroke-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none" id="rect2985" width="105" height="105" x="2.5" y="2.5" /><text xml:space="preserve" style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Gabriola;-inkscape-font-specification:Gabriola" x="9.9208069" y="57.514099" id="text3755" ><tspan id="tspan3757" x="9.9208069" y="57.514099" style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">mockdata-DOCTYPE</tspan></text></g></svg>';
 
 
 var displayJSON = function(data) { console.log(JSON.stringify(data, null, 2));};
-
-var escapeHTML = function(t) {
-  console.log(t);
-  var e = $('<div/>').text(t).html();
-  console.log(e);
-  return e;
-}
-
 
 var g = {
   nodes: [],
@@ -38,11 +24,24 @@ async.parallel([
     $.get("templates/metadoctype_stamp.svg",
       function(svgSTR) { cb(null, svgSTR); });
   },
+  function(cb) {
+    $.get("templates/open_stamp.svg",
+      function(svgSTR) { cb(null, svgSTR); });
+  },
+  function(cb) {
+    $.get("templates/referencial_stamp.svg",
+      function(svgSTR) { cb(null, svgSTR); });
+  },
   ],
   function(err, results) {
       var metaDocTypes = results[0];
     nodePositionByIds = results[1];
-    STAMP_TMPL = results[2]; // TODO parametric.
+    templates = {
+        personnelle: results[2],
+        open: results[3],
+        referentiel: results[4],
+    }
+    // STAMP_TMPL = results[2]; // TODO parametric.
 
     var skip = {
 'Risk':true,
@@ -106,9 +105,11 @@ async.parallel([
 
 var metaDocType2Node = function(metaDocType) {
   var node = {
-    id: metaDocType.related,
+    id: metaDocType.type,
     //label: metaDocType.related,
-    type: 'selfData',
+    // type: metaDocType.genre,
+    type: "personnelle",
+
     x: Math.random(), //TODO
     y: Math.random(), // TODO
     size: 50,
@@ -118,22 +119,30 @@ var metaDocType2Node = function(metaDocType) {
   return node;
 };
 
+var type2DisplayName = function(type) {
+    if (type) {
+        return type.replace(/[A-Z]/g, ' $&');
+    } else {
+        return "";
+    }
+};
+
 var generateSVG = function(metaDocType, callback) {
+    var template = templates[metaDocType.genre];
   $.ajax({
-      url: 'img/Logos_doctypes/' + metaDocType.related.toLowerCase() + '.svg',
+      url: 'img/Logos_doctypes/' + metaDocType.type.toLowerCase() + '.svg',
       success: function(icon, status) {
     // var icon = new Image();
     // icon.src = 'img/cozycloud_big.jpeg';
     // icon.onload = function(icon, status) {
-      var mySVG = STAMP_TMPL.replace('mockdata-DOCTYPE', metaDocType.displayName);
 
-      mySVG = mySVG.replace('xlink:href="mockdata-ICONURL"', 'xlink:href="data:image/svg+xml;base64,' + btoa(icon) + '"');
+      mySVG = template.replace('xlink:href="mockdata-ICONURL"', 'xlink:href="data:image/svg+xml;base64,' + btoa(icon) + '"');
       // mySVG = mySVG.replace('mockdata-ICONURL', 'data:image/svg+xml;charset=utf-8,' + icon);
     setImg(mySVG);
       },
       error: function() {
-        var mySVG = STAMP_TMPL.replace('mockdata-DOCTYPE', metaDocType.displayName);
-        setImg(mySVG);
+        // var mySVG = STAMP_TMPL.replace('mockdata-DOCTYPE', metaDocType.displayName);
+        setImg(template);
       },
     });
 
@@ -141,7 +150,7 @@ var generateSVG = function(metaDocType, callback) {
   var setImg = function(mySVG) {
   // console.log(mySVG);
   // Create a Data URI.
-  // var mySrc = 'data:image/svg+xml;base64,' + btoa(mySVG);
+      var mySVG = mySVG.replace('mockdata-DOCTYPE', type2DisplayName(metaDocType.type));
   var mySrc = 'data:image/svg+xml;charset=utf-8,' + mySVG;
 
   // Load up our image.
@@ -178,7 +187,7 @@ var generateSVG = function(metaDocType, callback) {
  * to develop a specific WebGL node renderer.
  */
 sigma.utils.pkg('sigma.canvas.nodes');
-sigma.canvas.nodes.selfData = (function() {
+sigma.canvas.nodes.personnelle = (function() {
 
   // Return the renderer itself:
   var renderer = function(node, context, settings) {
@@ -199,7 +208,8 @@ sigma.canvas.nodes.selfData = (function() {
         2 * size
       );
   } catch (e) {
-    console.log(node.data.related);
+    console.log(e);
+    // console.log(node.data.related);
   }
   context.restore();
   };

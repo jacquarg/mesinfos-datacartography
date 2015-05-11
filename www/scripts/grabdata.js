@@ -1,5 +1,5 @@
 // Define spreadsheet URL.
-var SPS_EXPE_MESINFOS = 'https://docs.google.com/a/hoodbrains.com/spreadsheets/d/11FHr8STCtM4M-Kd6jznsR9d5cP6_mzqAzlXsN5Us0PY/edit#gid=0'
+var SPS_EXPE_MESINFOS = 'https://docs.google.com/a/hoodbrains.com/spreadsheets/d/11FHr8STCtM4M-Kd6jznsR9d5cP6_mzqAzlXsN5Us0PY/edit#gid=128913589'
 
 // $('#graph-container').
 function fetchFromSpreadsheet(callback) {
@@ -24,19 +24,20 @@ var rows2MetaDoctype = function(rows) {
     var i, row, currentDT = {}, docType, k, v;
 
     var fieldsCol = {
-        fields: true,
-        values: true,
+        champs: true,
+        champsValeur: true,
+        champsType: true,
+        champsDescription: true,
     };
     var docTypes = [];
 
     for (i=0;i<rows.length;i++) { //
         row = rows[i].cells;
-        if (row.comment) { continue; }
+        if (row.commentaires) { continue; }
 
-        docType = row.docType;
-        if (row.docType && row.docType !== "" && currentDT.docType !== row.docType) {
+        if (row.type && row.type !== "" && currentDT.type !== row.type) {
             // New doctype
-            if (currentDT.docType) {  // Initialization.
+            if (currentDT.type) {  // Initialization.
                 docTypes.push(currentDT);
             }
 
