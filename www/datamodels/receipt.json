@@ -1,0 +1,86 @@
+{
+  "displayName": "Ticket de caisse", 
+  "description": "L'en-t\u00eate de mon ticket de caisse (date, d\u00e9signation, prix, ...). Source : Intermarch\u00e9 m\u00e0j hebdomadaire.", 
+  "fields": {
+    "origin": {
+      "displayName": "Source", 
+      "description": "Source de cet ensemble de donn\u00e9es"
+    }, 
+    "total": {
+      "displayName": "Total", 
+      "description": "Calcul\u00e9 selon le d\u00e9tail ticket"
+    }, 
+    "transaction": {
+      "displayName": "Transaction", 
+      "description": "Libell\u00e9 code traitement"
+    }, 
+    "intermarcheShopId": {
+      "displayName": "Identifiant point de vente", 
+      "description": "Identifiant du point de vente Intermarch\u00e9 de transaction"
+    }, 
+    "isOnline": {
+      "displayName": "e-commerce", 
+      "description": "Vrai si il s'agit d'une tiquet d'achat en ligneFlag si un num\u00e9ro de terminal et un code caissi\u00e8re \u00e9gal \u00e0 \u00ab 88888899 \u00bb"
+    }, 
+    "timestamp": {
+      "displayName": "Horodatage", 
+      "description": "Date et heure du passage du ticket en caisse (ou du mouvt de r\u00e9gulation des points de fid\u00e9lit\u00e9s)"
+    }, 
+    "receiptId": {
+      "displayName": "Identifiant ticket", 
+      "description": "Identifiant unique du ticket FID. (10 chiffres)"
+    }, 
+    "convertedPoints": {
+      "displayName": "Points Convertis", 
+      "description": "Unit\u00e9s d\u00e9pens\u00e9es au porteur du ticket en question (cents d\u2019euros)"
+    }, 
+    "checkoutReceiptId": {
+      "displayName": "Identifiant du ticket \u00e0 la caisse", 
+      "description": "Num\u00e9ro du ticket dans l\u2019encaissement (cas SE et TN)"
+    }, 
+    "transactionCode": {
+      "displayName": "Code de transaction", 
+      "description": "Code identifiant le type d'op\u00e9ration de la transaction (6 chiffres)"
+    }, 
+    "checkoutId": {
+      "displayName": "Identifiant de caisse", 
+      "description": "Num\u00e9ro de caisse qui a enregistr\u00e9 le ticket"
+    }, 
+    "amount": {
+      "displayName": "Total points", 
+      "description": "Montant total du ticket. La valeur peut \u00eatre n\u00e9gative (cas transfert de points)."
+    }, 
+    "articlesCount": {
+      "displayName": "Nombre d'articles", 
+      "description": "Quantit\u00e9 totale des articles du ticket."
+    }, 
+    "snippet": {
+      "displayName": "Bribe", 
+      "description": "Extrait illustrant ces donn\u00e9es dans les r\u00e9sultats de recherche. Calcul\u00e9 : 'Horodatage, paidAmount'"
+    }, 
+    "cashierId": {
+      "displayName": "Identifiant caissi\u00e8re", 
+      "description": "Identifiant de la caissi\u00e8re qui a enregistr\u00e9 le ticket"
+    }, 
+    "loyaltyBalance": {
+      "displayName": "Solde Fid", 
+      "description": "Solde des unit\u00e9s du porteur Home avant transaction"
+    }, 
+    "transactionId": {
+      "displayName": "Identifiant transaction", 
+      "description": "Num\u00e9ro de transaction (6 chiffres)"
+    }, 
+    "acquiredPoints": {
+      "displayName": "Points Accord\u00e9s", 
+      "description": "Unit\u00e9s accord\u00e9es au porteur du ticket en question"
+    }, 
+    "paidAmount": {
+      "displayName": "Montant pay\u00e9", 
+      "description": "calcul\u00e9 selon le d\u00e9tail ticket"
+    }
+  }, 
+  "docType": "Metadoctype", 
+  "related": "Receipt", 
+  "version": "1", 
+  "identificationField": "snippet"
+}

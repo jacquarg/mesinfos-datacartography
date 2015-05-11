@@ -1,0 +1,46 @@
+{
+"displayName": "G\u00e9olocalisation", 
+"description": "Ma position g\u00e9ographique horodat\u00e9e. Source : Orange (Position du mobile relev\u00e9e toutes les 15' - m\u00e0j journali\u00e8re)", 
+"fields": {
+  "origin": {
+    "displayName": "Source", 
+    "description": "Source de cet ensemble de donn\u00e9es"
+  }, 
+  "msisdn": {
+    "displayName": "Num\u00e9ro suivi", 
+    "description": "Num\u00e9ro du mobile suivi."
+  }, 
+  "timestamp": {
+    "displayName": "Horodatage", 
+    "description": "Date et heure du point. Au format ISO 8061 http://fr.wikipedia.org/wiki/ISO_8601 "
+  }, 
+  "longitude": {
+    "displayName": "Longitude", 
+    "description": "Longitude du lieu. En degr\u00e9s, selon la norme wsg84 (http://fr.wikipedia.org/wiki/WGS_84).  Null si l'\u00e9tat du terminal n'est pas 'allum\u00e9'."
+  }, 
+  "snippet": {
+    "displayName": "Bribe", 
+    "description": "Extrait illustrant ces donn\u00e9es dans les r\u00e9sultats de recherche. Calcul\u00e9 : 'Horodatage - geo:lat,lon'"
+  }, 
+  "idMesInfos": {
+    "displayName": "IdMesInfos", 
+    "description": "Identifiant MesInfos"
+  }, 
+  "radius": {
+    "displayName": "Rayon", 
+    "description": "Rayon de pr\u00e9cision du point de g\u00e9olocalisation. En m\u00e8tres."
+  }, 
+  "latitude": {
+    "displayName": "Latitude", 
+    "description": "Latitude du lieu. En degr\u00e9s, selon la norme wsg84 (http://fr.wikipedia.org/wiki/WGS_84). Null si l'\u00e9tat du terminal n'est pas 'allum\u00e9'."
+  }, 
+  "deviceState": {
+    "displayName": "\u00c9tat du terminal", 
+    "description": "Indique l'\u00e9tat (allum\u00e9 : null, \u00e9teind : 'OFF', inconnu : 'UNKNOWN') du terminal \u00e0 cet instant. La g\u00e9olocalisation est pertinente seulement dans l'\u00e9tat allum\u00e9 (null)."
+  }
+  }, 
+  "docType": "Metadoctype", 
+  "related": "GeolocationLog", 
+  "version": "1", 
+  "identificationField": "snippet"
+}

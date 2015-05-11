@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Calque_1"
+   x="0px"
+   y="0px"
+   width="100px"
+   height="100px"
+   viewBox="0 0 100 100"
+   enable-background="new 0 0 100 100"
+   xml:space="preserve"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="insurancecontract.svg"><metadata
+   id="metadata25"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs23" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="544"
+   id="namedview21"
+   showgrid="false"
+   inkscape:zoom="1.18"
+   inkscape:cx="-21.522032"
+   inkscape:cy="70.653136"
+   inkscape:window-x="201"
+   inkscape:window-y="131"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Calque_1" />
+<g
+   id="g3092"><g
+     transform="matrix(1.0056841,-0.79128483,0.79128483,1.0056841,-39.317162,21.333028)"
+     id="g3028"><path
+       inkscape:connector-curvature="0"
+       id="path3018"
+       transform="matrix(0.78145696,0,0,0.78145696,22.18543,29.162609)"
+       d="M 34.90625,-28.9375 C 16.857911,-21.12517 3.730483,-1.1114997 3.0625,19.5 c 4.291983,-4.07828 9.985259,-6.40625 15.90625,-6.40625 5.340025,0 10.486038,1.919581 14.59375,5.28125 l 0,11.71875 4.03125,0 0,-11.71875 c 4.110271,-3.364229 9.282415,-5.28125 14.625,-5.28125 5.922271,0 11.615547,2.33053 15.90625,6.40625 C 67.450619,-1.359754 54.054462,-21.775237 36.28125,-28.9375 l 0,48.46875 -0.1875,0.3125 -0.5,0.53125 -0.5,-0.53125 -0.1875,-0.3125 0,-48.46875 z" /><path
+       inkscape:connector-curvature="0"
+       d="m 51.006,5.589 c 0.189,0.005 0.381,0.006 0.57,0.012 V 4.714 C 51.576,3.843 50.87,3.138 50,3.138 c -0.87,0 -1.576,0.706 -1.576,1.576 V 5.602 C 48.633,5.596 48.844,5.594 49.054,5.588 26.15,6 6.288,21.26 0,43.199 c 3.164,-2.458 7.029,-3.795 11.055,-3.795 4.649,0 9.123,1.839 12.481,5.055 C 24.04,27.925 34.583,11.852 49.08,5.587 49.387,5.579 49.692,5.567 50,5.567 c 0.326,0 0.649,0.012 0.974,0.021 14.253,5.776 24.986,22.167 25.494,38.87 3.357,-3.215 7.83,-5.055 12.479,-5.055 4.024,0 7.889,1.336 11.053,3.794 C 93.717,21.279 73.885,6.026 51.006,5.589 z"
+       id="path3020" /></g><g
+     id="g3">
+	<path
+   id="path5"
+   d="M82.087,0H17.914h-4.125v4.125v91.904v4.127h4.125h64.173h4.124v-4.127V4.125V0H82.087z M82.087,96.029H17.914V4.125   h64.173V96.029z" />
+	<polygon
+   id="polygon7"
+   points="51.845,85.771 39.369,73.296 36.452,76.213 51.685,91.446 51.845,91.287 52.004,91.446 76.474,66.975    73.558,64.059  " />
+	<rect
+   id="rect9"
+   height="4.125"
+   width="52.948"
+   y="13.981"
+   x="23.525" />
+	<rect
+   id="rect11"
+   height="4.125"
+   width="52.948"
+   y="21.085"
+   x="23.525" />
+	<rect
+   id="rect13"
+   height="4.125"
+   width="52.948"
+   y="28.19"
+   x="23.525" />
+	<rect
+   id="rect15"
+   height="4.125"
+   width="52.948"
+   y="35.295"
+   x="23.525" />
+	<rect
+   id="rect17"
+   height="4.125"
+   width="52.948"
+   y="42.4"
+   x="23.525" />
+	<rect
+   id="rect19"
+   height="4.126"
+   width="35.754"
+   y="49.505"
+   x="23.525" />
+</g></g>
+</svg>

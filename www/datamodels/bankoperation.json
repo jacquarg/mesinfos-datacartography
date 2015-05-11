@@ -1,0 +1,30 @@
+{
+  "displayName": "Ecriture bancaire", 
+  "description": "Mes transactions bancaires. Les \u00e9critures sur mes comptes en banque (date, montant, ...). Origine : Soci\u00e9t\u00e9 G\u00e9n\u00e9rale, La Banque Postale, Cr\u00e9dit Coop\u00e9ratif - m\u00e0j journali\u00e8res", 
+  "fields": {
+    "bankAccount": {
+      "displayName": "Num\u00e9ro de compte", 
+      "description": "Le num\u00e9ro compte auquel se rapporte cette \u00e9criture."
+    }, 
+    "date": {
+      "displayName": "Date", 
+      "description": "La date de l'\u00e9criture"
+    }, 
+    "raw": {
+      "displayName": "Libell\u00e9 (brut)", 
+      "description": "Le libell\u00e9 de l'\u00e9criture (idem titre, mais donn\u00e9es brute, sans mise en forme)."
+    }, 
+    "amount": {
+      "displayName": "Montant", 
+      "description": "Le montant de l'\u00e9criture"
+    }, 
+    "title": {
+      "displayName": "Titre", 
+      "description": "Le titre de l'\u00e9criture."
+    }
+  }, 
+  "docType": "Metadoctype", 
+  "related": "BankOperation", 
+  "version": "1", 
+  "identificationField": "title"
+}

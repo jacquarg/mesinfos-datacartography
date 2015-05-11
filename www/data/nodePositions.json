@@ -1,0 +1,192 @@
+{
+  "GeolocationLog": {
+    "id": "GeolocationLog",
+    "x": 0.2933018389157951,
+    "y": 0.007875198731198907
+  },
+  "Receipt": {
+    "id": "Receipt",
+    "x": 0.040542264468967915,
+    "y": 0.7101895925588906
+  },
+  "VideoOnDemand": {
+    "id": "VideoOnDemand",
+    "x": 0.4584673473145813,
+    "y": 0.32972230459563434
+  },
+  "Claim": {
+    "id": "Claim",
+    "x": 0.8319435599260032,
+    "y": 0.9634527461603284
+  },
+  "BankProduct": {
+    "id": "BankProduct",
+    "x": 0.0510178511030972,
+    "y": 0.9777483644429594
+  },
+  "BankAccount": {
+    "id": "BankAccount",
+    "x": 0.6198289969470352,
+    "y": 0.7546725764404982
+  },
+  "Proposal": {
+    "id": "Proposal",
+    "x": 0.8560036947019398,
+    "y": 0.9382378309965134
+  },
+  "ReceiptDetail": {
+    "id": "ReceiptDetail",
+    "x": 0.5660591807682067,
+    "y": 0.2351491074077785
+  },
+  "BankOperation": {
+    "id": "BankOperation",
+    "x": 0.6927927911747247,
+    "y": 0.8798203035257757
+  },
+  "PhoneCommunicationLog": {
+    "id": "PhoneCommunicationLog",
+    "x": -0.44249548547103634,
+    "y": 0.3052434733944932
+  },
+  "PersonIncome": {
+    "id": "PersonIncome",
+    "x": 0.37066326616331935,
+    "y": 0.9294692783150822
+  },
+  "alarm": {
+    "id": "alarm",
+    "x": 0.24085788545198739,
+    "y": 0.6861382536590099
+  },
+  "# Todo list contains tasks. Each tasks are linked inside todo list.": {
+    "id": "# Todo list contains tasks. Each tasks are linked inside todo list.",
+    "x": 0.9308308197651058,
+    "y": 0.8129729114007205
+  },
+  "Note": {
+    "id": "Note",
+    "x": 0.8845588238909841,
+    "y": 0.6962547861039639
+  },
+  "Photo": {
+    "id": "Photo",
+    "x": 0.5098020434379578,
+    "y": 0.8159947297535837
+  },
+  "Album": {
+    "id": "Album",
+    "x": 0.5168122423347086,
+    "y": 0.12716982560232282
+  },
+  "Contact": {
+    "id": "Contact",
+    "x": 0.9586602449417114,
+    "y": 0.4707135632634163
+  },
+  "Notifications": {
+    "id": "Notifications",
+    "x": 0.04108056775294244,
+    "y": 0.7416948343161494
+  },
+  "User": {
+    "id": "User",
+    "x": 0.5730977850034833,
+    "y": 0.009536407422274351
+  },
+  "Mail": {
+    "id": "Mail",
+    "x": 0.8300455820281059,
+    "y": 0.48586161620914936
+  },
+  "# Base object, user manage tasks": {
+    "id": "# Base object, user manage tasks",
+    "x": 0.19585894187912345,
+    "y": 0.24711357685737312
+  },
+  "RiskVehicle": {
+    "id": "RiskVehicle",
+    "x": 0.28185057803057134,
+    "y": 0.7350029652006924
+  },
+  "InsuranceScoring": {
+    "id": "InsuranceScoring",
+    "x": 0.13854266609996557,
+    "y": 0.9800829228479415
+  },
+  "Tarification": {
+    "id": "Tarification",
+    "x": 0.7366505130194128,
+    "y": 0.0431552161462605
+  },
+  "Risk": {
+    "id": "Risk",
+    "x": 0.23062626621685922,
+    "y": 0.11460075271315873
+  },
+  "Quittance": {
+    "id": "Quittance",
+    "x": 0.1843698474112898,
+    "y": 0.982641204725951
+  },
+  "InsuranceContract": {
+    "id": "InsuranceContract",
+    "x": 0.9687443647999316,
+    "y": 0.5577124950941652
+  },
+  "Savings": {
+    "id": "Savings",
+    "x": 0.7551060717087239,
+    "y": 0.5421697301790118
+  },
+  "Contract": {
+    "id": "Contract",
+    "x": 0.3531620348803699,
+    "y": 0.43309144326485693
+  },
+  "HomeInsuranceContract": {
+    "id": "HomeInsuranceContract",
+    "x": 0.7136461760383099,
+    "y": 0.01779771945439279
+  },
+  "Person": {
+    "id": "Person",
+    "x": 0.9815646267961711,
+    "y": 0.38969334913417697
+  },
+  "Premiums": {
+    "id": "Premiums",
+    "x": 0.1816007497254759,
+    "y": 0.2623398087453097
+  },
+  "Client": {
+    "id": "Client",
+    "x": 0.8436673702672124,
+    "y": 0.2339637374971062
+  },
+  "Vehicle": {
+    "id": "Vehicle",
+    "x": 0.5852261343970895,
+    "y": 0.5870387405157089
+  },
+  "RiskHome": {
+    "id": "RiskHome",
+    "x": 0.4224725137464702,
+    "y": 0.29728135373443365
+  },
+  "Home": {
+    "id": "Home",
+    "x": 0.9254924517590553,
+    "y": 0.6905192073900253
+  },
+  "CarInsuranceContract": {
+    "id": "CarInsuranceContract",
+    "x": 0.07746681640855968,
+    "y": 0.6786198555491865
+  },
+  "InsuranceClaim": {
+    "id": "InsuranceClaim",
+    "x": 0.5288101609330624,
+    "y": 0.6056516896933317
+  }
+}

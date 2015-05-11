@@ -1,0 +1,2650 @@
+[
+  {
+    "displayName": "G\u00e9olocalisation", 
+    "description": "Ma position g\u00e9ographique horodat\u00e9e. Source : Orange (Position du mobile relev\u00e9e toutes les 15' - m\u00e0j journali\u00e8re)", 
+    "fields": {
+      "origin": {
+        "displayName": "Source", 
+        "description": "Source de cet ensemble de donn\u00e9es"
+      }, 
+      "msisdn": {
+        "displayName": "Num\u00e9ro suivi", 
+        "description": "Num\u00e9ro du mobile suivi."
+      }, 
+      "timestamp": {
+        "displayName": "Horodatage", 
+        "description": "Date et heure du point. Au format ISO 8061 http://fr.wikipedia.org/wiki/ISO_8601 "
+      }, 
+      "longitude": {
+        "displayName": "Longitude", 
+        "description": "Longitude du lieu. En degr\u00e9s, selon la norme wsg84 (http://fr.wikipedia.org/wiki/WGS_84).  Null si l'\u00e9tat du terminal n'est pas 'allum\u00e9'."
+      }, 
+      "snippet": {
+        "displayName": "Bribe", 
+        "description": "Extrait illustrant ces donn\u00e9es dans les r\u00e9sultats de recherche. Calcul\u00e9 : 'Horodatage - geo:lat,lon'"
+      }, 
+      "idMesInfos": {
+        "displayName": "IdMesInfos", 
+        "description": "Identifiant MesInfos"
+      }, 
+      "radius": {
+        "displayName": "Rayon", 
+        "description": "Rayon de pr\u00e9cision du point de g\u00e9olocalisation. En m\u00e8tres."
+      }, 
+      "latitude": {
+        "displayName": "Latitude", 
+        "description": "Latitude du lieu. En degr\u00e9s, selon la norme wsg84 (http://fr.wikipedia.org/wiki/WGS_84). Null si l'\u00e9tat du terminal n'est pas 'allum\u00e9'."
+      }, 
+      "deviceState": {
+        "displayName": "\u00c9tat du terminal", 
+        "description": "Indique l'\u00e9tat (allum\u00e9 : null, \u00e9teind : 'OFF', inconnu : 'UNKNOWN') du terminal \u00e0 cet instant. La g\u00e9olocalisation est pertinente seulement dans l'\u00e9tat allum\u00e9 (null)."
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "GeolocationLog", 
+    "version": "1", 
+    "identificationField": "snippet"
+  }, 
+  {
+    "displayName": "Ticket de caisse", 
+    "description": "L'en-t\u00eate de mon ticket de caisse (date, d\u00e9signation, prix, ...). Source : Intermarch\u00e9 m\u00e0j hebdomadaire.", 
+    "fields": {
+      "origin": {
+        "displayName": "Source", 
+        "description": "Source de cet ensemble de donn\u00e9es"
+      }, 
+      "total": {
+        "displayName": "Total", 
+        "description": "Calcul\u00e9 selon le d\u00e9tail ticket"
+      }, 
+      "transaction": {
+        "displayName": "Transaction", 
+        "description": "Libell\u00e9 code traitement"
+      }, 
+      "intermarcheShopId": {
+        "displayName": "Identifiant point de vente", 
+        "description": "Identifiant du point de vente Intermarch\u00e9 de transaction"
+      }, 
+      "isOnline": {
+        "displayName": "e-commerce", 
+        "description": "Vrai si il s'agit d'une tiquet d'achat en ligneFlag si un num\u00e9ro de terminal et un code caissi\u00e8re \u00e9gal \u00e0 \u00ab 88888899 \u00bb"
+      }, 
+      "timestamp": {
+        "displayName": "Horodatage", 
+        "description": "Date et heure du passage du ticket en caisse (ou du mouvt de r\u00e9gulation des points de fid\u00e9lit\u00e9s)"
+      }, 
+      "receiptId": {
+        "displayName": "Identifiant ticket", 
+        "description": "Identifiant unique du ticket FID. (10 chiffres)"
+      }, 
+      "convertedPoints": {
+        "displayName": "Points Convertis", 
+        "description": "Unit\u00e9s d\u00e9pens\u00e9es au porteur du ticket en question (cents d\u2019euros)"
+      }, 
+      "checkoutReceiptId": {
+        "displayName": "Identifiant du ticket \u00e0 la caisse", 
+        "description": "Num\u00e9ro du ticket dans l\u2019encaissement (cas SE et TN)"
+      }, 
+      "transactionCode": {
+        "displayName": "Code de transaction", 
+        "description": "Code identifiant le type d'op\u00e9ration de la transaction (6 chiffres)"
+      }, 
+      "checkoutId": {
+        "displayName": "Identifiant de caisse", 
+        "description": "Num\u00e9ro de caisse qui a enregistr\u00e9 le ticket"
+      }, 
+      "amount": {
+        "displayName": "Total points", 
+        "description": "Montant total du ticket. La valeur peut \u00eatre n\u00e9gative (cas transfert de points)."
+      }, 
+      "articlesCount": {
+        "displayName": "Nombre d'articles", 
+        "description": "Quantit\u00e9 totale des articles du ticket."
+      }, 
+      "snippet": {
+        "displayName": "Bribe", 
+        "description": "Extrait illustrant ces donn\u00e9es dans les r\u00e9sultats de recherche. Calcul\u00e9 : 'Horodatage, paidAmount'"
+      }, 
+      "cashierId": {
+        "displayName": "Identifiant caissi\u00e8re", 
+        "description": "Identifiant de la caissi\u00e8re qui a enregistr\u00e9 le ticket"
+      }, 
+      "loyaltyBalance": {
+        "displayName": "Solde Fid", 
+        "description": "Solde des unit\u00e9s du porteur Home avant transaction"
+      }, 
+      "transactionId": {
+        "displayName": "Identifiant transaction", 
+        "description": "Num\u00e9ro de transaction (6 chiffres)"
+      }, 
+      "acquiredPoints": {
+        "displayName": "Points Accord\u00e9s", 
+        "description": "Unit\u00e9s accord\u00e9es au porteur du ticket en question"
+      }, 
+      "paidAmount": {
+        "displayName": "Montant pay\u00e9", 
+        "description": "calcul\u00e9 selon le d\u00e9tail ticket"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Receipt", 
+    "version": "1", 
+    "identificationField": "snippet"
+  }, 
+  {
+    "displayName": "Vid\u00e9o \u00e0 la demande", 
+    "description": "Mes locations de vid\u00e9o via un service de location \u00e0 la demande (vid\u00e9o, date, heure, prix, ...). Source : Orange - m\u00e0j mensuelles\n", 
+    "fields": {
+      "origin": {
+        "displayName": "Source", 
+        "description": "Source de cet ensemble de donn\u00e9es"
+      }, 
+      "orderId": {
+        "displayName": "Num\u00e9ro de commande", 
+        "description": "Num\u00e9ro de la commande de vid\u00e9o"
+      }, 
+      "currency": {
+        "displayName": "Devise", 
+        "description": "Devise (\u00e0 priori euro) du prix."
+      }, 
+      "timestamp": {
+        "displayName": "Horodatage", 
+        "description": "Date et heure de d\u00e9but du visionnage. Au format ISO 8061 http://fr.wikipedia.org/wiki/ISO_8601"
+      }, 
+      "price": {
+        "displayName": "Prix", 
+        "description": "Prix de la location."
+      }, 
+      "videoId": {
+        "displayName": "Identifiant vid\u00e9o", 
+        "description": "Identifiant de la vid\u00e9o chez le fournisseur de contenu."
+      }, 
+      "idMesInfos": {
+        "displayName": "IdMesInfos", 
+        "description": "Identifiant MesInfos"
+      }, 
+      "status": {
+        "displayName": "Statut", 
+        "description": "\u00c9tat de la transaction. 'N' signifie qu'une erreur est survenue."
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "VideoOnDemand", 
+    "version": "1", 
+    "identificationField": "videoId"
+  }, 
+  {
+    "displayName": "R\u00e9clamation", 
+    "description": "Mes r\u00e9clamations aupr\u00e8s de ma banque. Origine : Soci\u00e9t\u00e9 G\u00e9n\u00e9rale.", 
+    "fields": {
+      "idNumber": {
+        "displayName": "Identifiant", 
+        "description": "Num\u00e9ro identifiant cette r\u00e9clamation."
+      }, 
+      "closureDate": {
+        "displayName": "Date de fermeture", 
+        "description": "Date de fermeture de cette r\u00e9clamation."
+      }, 
+      "status": {
+        "displayName": "Statut", 
+        "description": "Statut de la r\u00e9clamation"
+      }, 
+      "comment": {
+        "displayName": "Commentaire", 
+        "description": "Commentaires au sujet de cette r\u00e9clamation."
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Claim", 
+    "version": "1", 
+    "identificationField": "comment"
+  }, 
+  {
+    "displayName": "Produit Bancaire", 
+    "description": "Mes produits, souscrits aupr\u00e8s de ma banque : compte courant, carte bancaire... et les informations s'y rapportant (date d'ouverture, solde, ...). Origin : Soci\u00e9t\u00e9 G\u00e9n\u00e9rale.", 
+    "fields": {
+      "uniquenessCode": {
+        "displayName": "Cl\u00e9", 
+        "description": "Somme de contr\u00f4le"
+      }, 
+      "trimestrialAverageBalance": {
+        "displayName": "Balance moyenne", 
+        "description": "Balance moyenne par trimestre"
+      }, 
+      "legalEntityCode": {
+        "displayName": "Code banque", 
+        "description": "Code banque"
+      }, 
+      "family": {
+        "displayName": "Famille", 
+        "description": "Famille du produit"
+      }, 
+      "overdraftFees": {
+        "displayName": "Agios", 
+        "description": "Frais de d\u00e9couverts"
+      }, 
+      "inDebtFees": {
+        "displayName": "Int\u00e9r\u00eats", 
+        "description": "Int\u00e9r\u00eats du pr\u00eat"
+      }, 
+      "label": {
+        "displayName": "Llibell\u00e9", 
+        "description": "Nom du produit"
+      }, 
+      "idNumber": {
+        "displayName": "Identifiant", 
+        "description": "Num\u00e9ro identifiant cette r\u00e9clamation."
+      }, 
+      "serviceID": {
+        "displayName": "Num\u00e9ro du service", 
+        "description": "Num\u00e9ro d'identification du service"
+      }, 
+      "role": {
+        "displayName": "R\u00f4le", 
+        "description": "Titulaire, mandataire, ..."
+      }, 
+      "inDebtMonthlyTransfer": {
+        "displayName": "Mensualit\u00e9s", 
+        "description": "Mensualit\u00e9s du pr\u00eat."
+      }, 
+      "openingDate": {
+        "displayName": "Date d'ouverture", 
+        "description": "Date de souscription au produit"
+      }, 
+      "closingDate": {
+        "displayName": "Date de fermeture", 
+        "description": "Date de retrait du produit."
+      }, 
+      "overdraftDays": {
+        "displayName": "Jours \u00e0 d\u00e9couvert", 
+        "description": "Nombre de jour \u00e0 d\u00e9couvert"
+      }, 
+      "identity": {
+        "displayName": "Identifiant", 
+        "description": "Num\u00e9ro d'identification du service"
+      }, 
+      "assets": {
+        "displayName": "Solde", 
+        "description": "Solde du produit."
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "BankProduct", 
+    "version": "1", 
+    "identificationField": "label"
+  }, 
+  {
+    "displayName": "Compte bancaire", 
+    "description": "Mes comptes bancaires. (banque, intitul\u00e9, ...). Origine : Soci\u00e9t\u00e9 G\u00e9n\u00e9rale, La Banque Postale, Cr\u00e9dit Coop\u00e9ratif.", 
+    "fields": {
+      "bankAccess": {
+        "displayName": "Acc\u00e8s", 
+        "description": "Usage interne : _id du document pr\u00e9sentant les identifiants pour ce compte."
+      }, 
+      "accountNumber": {
+        "displayName": "Num\u00e9ro de compte", 
+        "description": "Num\u00e9ro de compte"
+      }, 
+      "lastChecked": {
+        "displayName": "Mise \u00e0 jour", 
+        "description": "Instant de derni\u00e8re mise \u00e0 jour des donn\u00e9es du compte."
+      }, 
+      "title": {
+        "displayName": "Compte", 
+        "description": "L'intitul\u00e9 du compte"
+      }, 
+      "initialAmount": {
+        "displayName": "Solde Initial", 
+        "description": "Solde Initial"
+      }, 
+      "bank": {
+        "displayName": "Banque", 
+        "description": "L'ID de la banque"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "BankAccount", 
+    "version": "1", 
+    "identificationField": "title"
+  }, 
+  {
+    "displayName": "Produit Conseill\u00e9", 
+    "description": "Les produits qui me seront propos\u00e9s par ma banque (carte bancaire, plan \u00e9pargne, ...). Origin : Soci\u00e9t\u00e9 g\u00e9n\u00e9rale.", 
+    "fields": {
+      "category": {
+        "displayName": "Cat\u00e9gorie", 
+        "description": "Produit \u00e0 conseiller ou proposition commerciale."
+      }, 
+      "amount": {
+        "displayName": "Montant", 
+        "description": "Montant de la proposition commerciale."
+      }, 
+      "familyCode": {
+        "displayName": "Id famille", 
+        "description": "Code identifiant la famille du produit."
+      }, 
+      "label": {
+        "displayName": "Libell\u00e9", 
+        "description": "Libell\u00e9 du produit."
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Proposal", 
+    "version": "1", 
+    "identificationField": "label"
+  }, 
+  {
+    "displayName": "Ligne de ticket de caisse", 
+    "description": "Chaque ligne de mon ticket de caisse (date, d\u00e9signation, prix, ...). Source : Intermarch\u00e9 m\u00e0j hebdomadaire.", 
+    "fields": {
+      "origin": {
+        "displayName": "Source", 
+        "description": "Source de cet ensemble de donn\u00e9es"
+      }, 
+      "familyLabel": {
+        "displayName": "Libell\u00e9 famille", 
+        "description": "Nom de la famille de produit."
+      }, 
+      "receiptId": {
+        "displayName": "Identifiant ticket", 
+        "description": "Identifiant unique du ticket Fid\u00e9lit\u00e9."
+      }, 
+      "family": {
+        "displayName": "Codefamille ", 
+        "description": "Code \u00ab Famille \u00bb de l\u2019article (donn\u00e9 par le syst\u00e8me d\u2019encaissement ou flux externe)."
+      }, 
+      "isOnlineBuy": {
+        "displayName": "e-commerce", 
+        "description": "Flag si un num\u00e9ro de terminal et un code caissi\u00e8re \u00e9gal \u00e0 \u00ab 88888899 \u00bb."
+      }, 
+      "sectionLabel": {
+        "displayName": "Rayon", 
+        "description": "Nom du rayon (aval)"
+      }, 
+      "section": {
+        "displayName": "Code rayon", 
+        "description": "Code rayon aval"
+      }, 
+      "barcode": {
+        "displayName": "Code barre", 
+        "description": "Code article transmis par le syst\u00e8me d\u2019encaissement ou flux externe."
+      }, 
+      "label": {
+        "displayName": "Libell\u00e9 article", 
+        "description": "Nom de l'article.\n"
+      }, 
+      "price": {
+        "displayName": "Prix unitaire", 
+        "description": "Prix unitaire de l'article."
+      }, 
+      "amount": {
+        "displayName": "Quantit\u00e9", 
+        "description": "Nombre d\u2019articles. Valeur fournie par le syst\u00e8me d\u2019encaissement agr\u00e9g\u00e9 par le SF."
+      }, 
+      "intermarcheShopId": {
+        "displayName": "Identifiant point de vente", 
+        "description": "Identifiant du point de vente Intermarch\u00e9 de transaction."
+      }, 
+      "timestamp": {
+        "displayName": "Horodatage", 
+        "description": "Date du passage du ticket en caisse (ou du  mouvt de r\u00e9gulation de points de fid\u00e9lit\u00e9s)."
+      }, 
+      "typeLabel": {
+        "displayName": "Type d'article", 
+        "description": "Nom du type d'article.\n"
+      }, 
+      "type": {
+        "displayName": "Code Type d'article", 
+        "description": "Type d\u2019article.\n"
+      }, 
+      "order": {
+        "displayName": "Ligne", 
+        "description": "Ordre de l\u2019article dans le panier transmis par le syst\u00e8me d\u2019encaissement."
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "ReceiptDetail", 
+    "version": "1", 
+    "identificationField": "label"
+  }, 
+  {
+    "displayName": "Ecriture bancaire", 
+    "description": "Mes transactions bancaires. Les \u00e9critures sur mes comptes en banque (date, montant, ...). Origine : Soci\u00e9t\u00e9 G\u00e9n\u00e9rale, La Banque Postale, Cr\u00e9dit Coop\u00e9ratif - m\u00e0j journali\u00e8res", 
+    "fields": {
+      "bankAccount": {
+        "displayName": "Num\u00e9ro de compte", 
+        "description": "Le num\u00e9ro compte auquel se rapporte cette \u00e9criture."
+      }, 
+      "date": {
+        "displayName": "Date", 
+        "description": "La date de l'\u00e9criture"
+      }, 
+      "raw": {
+        "displayName": "Libell\u00e9 (brut)", 
+        "description": "Le libell\u00e9 de l'\u00e9criture (idem titre, mais donn\u00e9es brute, sans mise en forme)."
+      }, 
+      "amount": {
+        "displayName": "Montant", 
+        "description": "Le montant de l'\u00e9criture"
+      }, 
+      "title": {
+        "displayName": "Titre", 
+        "description": "Le titre de l'\u00e9criture."
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "BankOperation", 
+    "version": "1", 
+    "identificationField": "title"
+  }, 
+  {
+    "displayName": "Journal d'appel", 
+    "description": "Journal de mes communications t\u00e9l\u00e9phoniques (voix, sms, data), horodat\u00e9es et g\u00e9olocalis\u00e9es. Source : Orange - m\u00e0j mensuelles.", 
+    "fields": {
+      "origin": {
+        "displayName": "Source", 
+        "description": "Source de cet ensemble de donn\u00e9es"
+      }, 
+      "direction": {
+        "displayName": "Direction", 
+        "description": "Direction de la communication (entrante : 'INCOMING', sortante : 'OUTGOING', r\u00e9achemin\u00e9 : 'FORWARDED')."
+      }, 
+      "chipType": {
+        "displayName": "Grandeur de valorisation", 
+        "description": "Nature de l'unit\u00e9 de valorisation de l'appel ('s' : seconde pour les appels voix, 'c' : caract\u00e8re pour les sms, 'M' : message pour les sms et mms) "
+      }, 
+      "latitude": {
+        "displayName": "Latitude", 
+        "description": "Latitude du lieu de la communication. En degr\u00e9s, selon la norme wsg84 (http://fr.wikipedia.org/wiki/WGS_84). 'null' pour les lignes fixes."
+      }, 
+      "subscriberNumber": {
+        "displayName": "Num\u00e9ro de l'abonn\u00e9", 
+        "description": "Num\u00e9ro de t\u00e9l\u00e9phone de l'abonn\u00e9 (p.e. pour une communication sortante il sera l'appelant, pour une communication entrante c'est le num\u00e9ro appel\u00e9)"
+      }, 
+      "chipCount": {
+        "displayName": "Co\u00fbt", 
+        "description": "Co\u00fbt de la communication. L'unit\u00e9 de mesure est d\u00e9finie par le champs 'Grandeur de valorisation' (chipType)"
+      }, 
+      "longitude": {
+        "displayName": "Longitude", 
+        "description": "Longitude du lieu de la communication. En degr\u00e9s, selon la norme wsg84 (http://fr.wikipedia.org/wiki/WGS_84). 'null' pour les lignes fixes."
+      }, 
+      "snippet": {
+        "displayName": "Bribe", 
+        "description": "Extrait illustrant ces donn\u00e9es dans les r\u00e9sultats de recherche. Calcul\u00e9 : 'Horodatage - direction - type - num\u00e9ro du correspondant'"
+      }, 
+      "idMesInfos": {
+        "displayName": "IdMesInfos", 
+        "description": "Identifiant MesInfos"
+      }, 
+      "correspondantNumber": {
+        "displayName": "Num\u00e9ro du correspondant", 
+        "description": "Num\u00e9ro de t\u00e9l\u00e9phone du mobile partenaire (p.e. pour une communciation sortante le num\u00e9ro appel\u00e9, pour une communication entrante le num\u00e9ro appelant). "
+      }, 
+      "timestamp": {
+        "displayName": "Horodatage", 
+        "description": "Date et heure de d\u00e9but de la communication. Au format ISO 8061 http://fr.wikipedia.org/wiki/ISO_8601"
+      }, 
+      "imei": {
+        "displayName": "IMEI", 
+        "description": "Identifiant international du terminal de l'abonn\u00e9 (International Mobile Equipment Identity : IMEI). 'null' pour les lignes fixes."
+      }, 
+      "type": {
+        "displayName": "Type", 
+        "description": "Type de transmission. Le type SMS-C correspond  \u00e0 la transmission entre l'abonn\u00e9 et le centre SMS, il contient les donn\u00e9es de g\u00e9olocalisation. Pour le type SMS-MC c'est entre le centre SMS et le correspondant. Il peut donc y avoir deux documents (un SMS-C et un SMS-MC) pour un unique SMS. Pour le type Data, la localisation et l'horodatage ne sont pas pr\u00e9cis.\n"
+      }, 
+      "imsi": {
+        "displayName": "IMSI", 
+        "description": "Identifiant international d'abonn\u00e9 mobile (IMSI : International Mobile Subscriber Identify). 'null' pour les lignes fixes"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "PhoneCommunicationLog", 
+    "version": "1", 
+    "identificationField": "snippet"
+  }, 
+  {
+    "displayName": "Revenus", 
+    "description": "Mes revenus, inf\u00e9r\u00e9s par ma banque (salaires, retraites, allocations, ...). Origine : Soci\u00e9t\u00e9 G\u00e9n\u00e9rale", 
+    "fields": {
+      "alimony": {
+        "displayName": "Pension", 
+        "description": "Revenus de pension"
+      }, 
+      "averageLevel": {
+        "displayName": "Niveau", 
+        "description": "Niveau de revenue du plus petit (1 au plus grand >)"
+      }, 
+      "unemploymentBenefit": {
+        "displayName": "Chomage", 
+        "description": "Allocation chomage"
+      }, 
+      "annualSlice": {
+        "displayName": "Revenu annuel", 
+        "description": "tranche du revenu annuel"
+      }, 
+      "domiciliatedIncomes": {
+        "displayName": "Domicili\u00e9", 
+        "description": "Revenus domicili\u00e9s sur le compte"
+      }, 
+      "propertyIncomes": {
+        "displayName": "Foncier", 
+        "description": "Revenus locatifs"
+      }, 
+      "transferableIncomes": {
+        "displayName": "Transferable", 
+        "description": "Revenus transferables"
+      }, 
+      "pension": {
+        "displayName": "Retraite", 
+        "description": "Revenus de pension de retraite"
+      }, 
+      "otherIncomes": {
+        "displayName": "Autre", 
+        "description": "Autres revenus"
+      }, 
+      "retirementPension": {
+        "displayName": "Retraite", 
+        "description": "Revenus de pension de retraite"
+      }, 
+      "familyAllowance": {
+        "displayName": "Allocation familiale", 
+        "description": "Allocations familiales"
+      }, 
+      "monthlyIncomes": {
+        "displayName": "Mensuel", 
+        "description": "Revenus mensuels"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "PersonIncome", 
+    "version": "1", 
+    "identificationField": "monthlyIncomes"
+  }, 
+  {
+    "displayName": "Alarme", 
+    "description": "Une alarme qui m'est faite pour me remm\u00e9morer un \u00e9v\u00e9nement. (Horodatage, description, ...). Origine : CozyCloud", 
+    "fields": {
+      "action": {
+        "displayName": "Action", 
+        "description": "Tells the system what channel the alarm should be broadcasted through. Possible values: DISPLAY"
+      }, 
+      "trigg": {
+        "displayName": "Trigger date", 
+        "description": "The date when the alarm should be triggered."
+      }, 
+      "description": {
+        "displayName": "Description", 
+        "description": "The reason why the user wants an alarm."
+      }, 
+      "related": {
+        "displayName": "Related", 
+        "description": "Tells which application has created the alarm and which document is related to this alarm. Can be null."
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "alarm", 
+    "version": "0.1", 
+    "identificationField": "description"
+  }, 
+  {
+    "displayName": "Liste de t\u00e2che", 
+    "description": "Mes listes de t\u00e2ches (titre, tags, ...). Origine : CozyCloud", 
+    "fields": {
+      "humanPath": {
+        "displayName": "chemin", 
+        "description": "Chemin de classification de la note."
+      }, 
+      "path": {
+        "displayName": "chemin (brut)", 
+        "description": "Chemin de classification de la note. Format brut."
+      }, 
+      "tags": {
+        "displayName": "Marqueurs", 
+        "description": "Liste des marqueurs th\u00e9matiques sur cette note.\n"
+      }, 
+      "title": {
+        "displayName": "Titre", 
+        "description": "Titre de la liste de t\u00e2che"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "# Todo list contains tasks. Each tasks are linked inside todo list.", 
+    "version": "", 
+    "identificationField": "Title"
+  }, 
+  {
+    "displayName": "Note", 
+    "description": "Une note \u00e9crite (corps, tags, ...). Origine : CozyCloud", 
+    "fields": {
+      "tags": {
+        "displayName": "Marqueurs", 
+        "description": "Liste des marqueurs th\u00e9matiques sur cette note.\n"
+      }, 
+      "title": {
+        "displayName": "TItre", 
+        "description": "Le titre de la note."
+      }, 
+      "humanPath": {
+        "displayName": "chemin", 
+        "description": "Chemin de classification de la note."
+      }, 
+      "content": {
+        "displayName": "Corps", 
+        "description": "Le contenu de la note."
+      }, 
+      "parent_id": {
+        "displayName": "note parente", 
+        "description": "Id de la note parente"
+      }, 
+      "version": {
+        "displayName": "Version", 
+        "description": "Le num\u00e9ro de version de cette note."
+      }, 
+      "_attachments": {
+        "displayName": "Pi\u00e8ces-jointes", 
+        "description": "Les pi\u00e8ce-jointes \u00e0 cette note."
+      }, 
+      "path": {
+        "displayName": "chemin (brut)", 
+        "description": "Chemin de classification de la note. Format brut."
+      }, 
+      "creationDate": {
+        "displayName": "Cr\u00e9ation", 
+        "description": "Date de cr\u00e9ation de la note. Au format ISO 8061 http://fr.wikipedia.org/wiki/ISO_8601."
+      }, 
+      "lastModificationDate": {
+        "displayName": "Derni\u00e8re modification\n", 
+        "description": "Date de deri\u00e8re modification. Au format ISO 8061 http://fr.wikipedia.org/wiki/ISO_8601"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Note", 
+    "version": "", 
+    "identificationField": "title"
+  }, 
+  {
+    "displayName": "Photo", 
+    "description": "Mes photos (titre, description, ...). Orignie : CozyCloud, Google (Picasa)", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "description": {
+        "displayName": "Description", 
+        "description": "Description de la photographie"
+      }, 
+      "title": {
+        "displayName": "Titre", 
+        "description": "Titre de la photographie"
+      }, 
+      "_attachments": {
+        "displayName": "Pi\u00e8ces-jointes", 
+        "description": "Les \u00e9l\u00e9ments attach\u00e9s \u00e0 cette photo."
+      }, 
+      "albumid": {
+        "displayName": "Id album", 
+        "description": "Identifiant de l'album auquel cette photo appartient"
+      }, 
+      "id": {
+        "displayName": "Identifiant", 
+        "description": ""
+      }, 
+      "String": {
+        "displayName": "Origine", 
+        "description": "Origine de cet ensemble de donn\u00e9es"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Photo", 
+    "version": "", 
+    "identificationField": "title"
+  }, 
+  {
+    "displayName": "Album", 
+    "description": "Mes albums photo. Origine : CozyCloud, Google (Picasa)", 
+    "fields": {
+      "description": {
+        "displayName": "Description", 
+        "description": ""
+      }, 
+      "clearance": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "id": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "title": {
+        "displayName": "Titre", 
+        "description": ""
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Album", 
+    "version": "", 
+    "identificationField": "Titre"
+  }, 
+  {
+    "displayName": "Contact", 
+    "description": "Un contact de mon carnet d'adresse (nom, @, tel, adresse, ...). Origine : Google, CozyCloud", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "String": {
+        "displayName": "Origine", 
+        "description": "Origine de cet ensemble de donn\u00e9es"
+      }, 
+      "_attachments": {
+        "displayName": "Pi\u00e8ces-jointes", 
+        "description": ""
+      }, 
+      "note": {
+        "displayName": "Note", 
+        "description": ""
+      }, 
+      "datapoints": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "id": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "fn": {
+        "displayName": "Nom Pr\u00e9nom", 
+        "description": "Nom et pr\u00e9nom du contact. #TODO : Un seul champ pour deux valeurs ??"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Contact", 
+    "version": "0.1", 
+    "identificationField": ""
+  }, 
+  {
+    "displayName": "Notification", 
+    "description": "Un message qui vous est envoy\u00e9 via la zone de notification. (message, horodatage, ...). Origine : CozyCloud", 
+    "fields": {
+      "resource": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "text": {
+        "displayName": "Texte", 
+        "description": "Le message textuel de la notification"
+      }, 
+      "app": {
+        "displayName": "", 
+        "description": "Application"
+      }, 
+      "publishDate": {
+        "displayName": "", 
+        "description": "Date de publication"
+      }, 
+      "type": {
+        "displayName": "Type", 
+        "description": "Le type de la notification."
+      }, 
+      "ref": {
+        "displayName": "", 
+        "description": ""
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Notifications", 
+    "version": "", 
+    "identificationField": "?"
+  }, 
+  {
+    "displayName": "Utilisateur", 
+    "description": "Mon compte utilisateur sur un service web.(email, ...). Origine : CozyCloud", 
+    "fields": {
+      "owner": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "timezone": {
+        "displayName": "Fuseau horraire", 
+        "description": "Le fuseau horraire de l'utilisateur. Utilis\u00e9 pour convertir les heures GMT en heures locales"
+      }, 
+      "password": {
+        "displayName": "Mot de passe", 
+        "description": ""
+      }, 
+      "activated": {
+        "displayName": "activ\u00e9", 
+        "description": "Si l'utilisateur a activ\u00e9 son compte ou non."
+      }, 
+      "email": {
+        "displayName": "email", 
+        "description": "L'email de l'utilisateur"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "User", 
+    "version": "", 
+    "identificationField": "email"
+  }, 
+  {
+    "displayName": "eMail", 
+    "description": "Mes email (contenu, exp\u00e9diteur, destinataires, ...). Origine : CozyCloud\n", 
+    "fields": {
+      "idRemoteMailbox": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "inReplyTo": {
+        "displayName": "En r\u00e9ponse \u00e0", 
+        "description": "Email pr\u00e9c\u00e9dent dans la dscussion."
+      }, 
+      "from": {
+        "displayName": "Exp\u00e9diteur", 
+        "description": "Adresse email de l'exp\u00e9diteur de l'email"
+      }, 
+      "to": {
+        "displayName": "Destinataire", 
+        "description": ""
+      }, 
+      "cc": {
+        "displayName": "En copie", 
+        "description": ""
+      }, 
+      "text": {
+        "displayName": "Corps (text)", 
+        "description": "Corps du mail au format text."
+      }, 
+      "headersRaw": {
+        "displayName": "Ent\u00eate brut", 
+        "description": "Ent\u00eate de l'email, brut."
+      }, 
+      "mailbox": {
+        "displayName": "Boite mail", 
+        "description": ""
+      }, 
+      "priority": {
+        "displayName": "Priorit\u00e9", 
+        "description": ""
+      }, 
+      "raw": {
+        "displayName": "Contenu brut", 
+        "description": "Contenu de l'email, brut"
+      }, 
+      "html": {
+        "displayName": "Corps (html)", 
+        "description": "Corps du mail au format html"
+      }, 
+      "flags": {
+        "displayName": "Marqueur", 
+        "description": "?"
+      }, 
+      "hasAttachments": {
+        "displayName": "Pi\u00e8ces-jointes", 
+        "description": "Vrai si ce mail a des pi\u00e8ces-jointes, faux sinon."
+      }, 
+      "read": {
+        "displayName": "Lu", 
+        "description": "Indique si l'email a \u00e9t\u00e9 lu ou non."
+      }, 
+      "date": {
+        "displayName": "Date", 
+        "description": "Date de l'email. Au format ISO 8061 http://fr.wikipedia.org/wiki/ISO_8601"
+      }, 
+      "references": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "dateValueOf": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "flagged": {
+        "displayName": "Marqu\u00e9", 
+        "description": ""
+      }, 
+      "createdAt": {
+        "displayName": "Date de cr\u00e9ation", 
+        "description": "Date de cr\u00e9ation de l'email. Au format ISO 8061 http://fr.wikipedia.org/wiki/ISO_8601."
+      }, 
+      "subject": {
+        "displayName": "Objet", 
+        "description": "Objet de l'email"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Mail", 
+    "version": "", 
+    "identificationField": ""
+  }, 
+  {
+    "displayName": "T\u00e2che", 
+    "description": "Mes t\u00e2ches. Origine : CozyCloud.", 
+    "fields": {
+      "completionDate": {
+        "displayName": "Date d'accomplissement", 
+        "description": "La date \u00e0 laquelle cette t\u00e2che a \u00e9t\u00e9 marqu\u00e9e acomplie. Au format ISO 8061 http://fr.wikipedia.org/wiki/ISO_8601"
+      }, 
+      "description": {
+        "displayName": "Description", 
+        "description": "Descriptif de la t\u00e2che"
+      }, 
+      "tags": {
+        "displayName": "Marqueurs", 
+        "description": "Liste des marqueurs th\u00e9matiques sur cette note.\n"
+      }, 
+      "previousTask": {
+        "displayName": "Pr\u00e9c\u00e9dente\n", 
+        "description": "T\u00e2che pr\u00e9c\u00e9dente "
+      }, 
+      "list": {
+        "displayName": "Liste", 
+        "description": "La liste \u00e0 laquelle cette t\u00e2che appartient"
+      }, 
+      "done": {
+        "displayName": "Accomplie\n", 
+        "description": "La t\u00e2che est faite ou reste \u00e0 faire."
+      }, 
+      "nextTask": {
+        "displayName": "Suivante", 
+        "description": ""
+      }, 
+      "creationDate": {
+        "displayName": "Cr\u00e9ation", 
+        "description": "Date de cr\u00e9ation. Au format ISO 8061 http://fr.wikipedia.org/wiki/ISO_8601"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "# Base object, user manage tasks", 
+    "version": "", 
+    "identificationField": ""
+  }, 
+  {
+    "displayName": "Risque Vehicle", 
+    "description": "Les facteurs de risques pour mon v\u00e9hicule (puissance, immatriculation, ...). Origine\u00a0: AXA \u20ac\u201c m\u00e0\u00a0j mensuelle", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "drivingLicenceDate": {
+        "displayName": "Date d'obtention du permis de conduire", 
+        "description": "Date d'obtention du permis de conduire"
+      }, 
+      "axaCDGPJ": {
+        "displayName": "Code Garantie Protection Juridique", 
+        "description": "Code Garantie Protection Juridique"
+      }, 
+      "firstRegistrationDate": {
+        "displayName": "Date de mise en circulation", 
+        "description": "Date de mise en circulation du v\u00e9hicule"
+      }, 
+      "axaCDGRF": {
+        "displayName": "Code Garantie de responsabilit\u00e9 Civile", 
+        "description": "Code Garantie de responsabilit\u00e9 Civile"
+      }, 
+      "axaCDIVL": {
+        "displayName": "Code Garantie Incendie Vol", 
+        "description": "Code Garantie Incendie Vol"
+      }, 
+      "parking": {
+        "displayName": "Garage", 
+        "description": "Pr\u00e9sence de garage"
+      }, 
+      "axaCDFVE": {
+        "displayName": "Code famille de v\u00e9hicule", 
+        "description": "Code famille de v\u00e9hicule"
+      }, 
+      "axaCDKLM": {
+        "displayName": "Code Garantie 9000 KM UAP", 
+        "description": "Code Garantie 9000 KM UAP"
+      }, 
+      "axaIDVEG": {
+        "displayName": "V\u00e9hicule Haut de Gamme", 
+        "description": "V\u00e9hicule Haut de Gamme OUI/non"
+      }, 
+      "axaIDACH": {
+        "displayName": "Indicateur d'\u00e9tat \u00e0\u00a0 l'achat", 
+        "description": "Indicateur d'\u00e9tat du v\u00e9hicule \u00e0\u00a0 l'achat"
+      }, 
+      "registration": {
+        "displayName": "Num\u00e9ro d'immatriculation", 
+        "description": "Num\u00e9ro d'immatriculation"
+      }, 
+      "technicalCheck": {
+        "displayName": "Contr\u00e0\u00b4le technique", 
+        "description": "Contr\u00e0\u00b4le technique"
+      }, 
+      "axaIDCAS": {
+        "displayName": "Conducteur Assur\u00e9", 
+        "description": "Conducteur Assur\u00e9"
+      }, 
+      "axaCDCVH": {
+        "displayName": "Code classe du v\u00e9hicule", 
+        "description": "Code classe du v\u00e9hicule"
+      }, 
+      "axaCDGVE": {
+        "displayName": "Groupe du v\u00e9hicule", 
+        "description": "Groupe du v\u00e9hicule"
+      }, 
+      "tattoo": {
+        "displayName": "Indicateur du marquage des vitres", 
+        "description": "Indicateur du marquage des vitres"
+      }, 
+      "axaIDGKL": {
+        "displayName": "Indicateur Garantie de KM Limit\u00e9", 
+        "description": "Indicateur Garantie de KM Limit\u00e9"
+      }, 
+      "axaIDGDC": {
+        "displayName": "Indicateur de Garantie D\u00e9c\u00e8s Conducteur", 
+        "description": "Indicateur de Garantie D\u00e9c\u00e8s Conducteur"
+      }, 
+      "axaTYPROUE": {
+        "displayName": "Type de roues", 
+        "description": "Type de roues"
+      }, 
+      "axaIDVHR": {
+        "displayName": "Indicateur V\u00e9hicule \u00e0\u00a0 Haut risque", 
+        "description": "Indicateur V\u00e9hicule \u00e0\u00a0 Haut risque (Oui/non)"
+      }, 
+      "axaCDVEH": {
+        "displayName": "Type de v\u00e9hicule", 
+        "description": "Type de v\u00e9hicule"
+      }, 
+      "owningDuration": {
+        "displayName": "Dur\u00e9e de d\u00e9tention du v\u00e9hicule actuel", 
+        "description": "Dur\u00e9e de d\u00e9tention du v\u00e9hicule actuel"
+      }, 
+      "fuel": {
+        "displayName": "Carburant", 
+        "description": "Nature du carburant (essence, gazoil)"
+      }, 
+      "axaKMSAN": {
+        "displayName": "Kilom\u00e9trage annuelle-Formule TNS", 
+        "description": "Kilom\u00e9trage annuelle-Formule TNS"
+      }, 
+      "axaCDCPP": {
+        "displayName": "Parent\u00e9 du conducteur Principal", 
+        "description": "Parent\u00e9 du conducteur Principal"
+      }, 
+      "registrationDate": {
+        "displayName": "Date d'\u00e9tablissement de la carte grise", 
+        "description": "Date d'\u00e9tablissement de la carte grise"
+      }, 
+      "parkingType": {
+        "displayName": "Type de parking", 
+        "description": "Type de parking"
+      }, 
+      "axaCDEXT": {
+        "displayName": "Code extention de garantie caravane", 
+        "description": "Code extention de garantie caravane"
+      }, 
+      "power": {
+        "displayName": "Puissance", 
+        "description": "Puisssance du v\u00e9hicule"
+      }, 
+      "axaNBEXT": {
+        "displayName": "Nombre d'extention de garanties", 
+        "description": "Nombre d'extention de garanties"
+      }, 
+      "axaCDIPT": {
+        "displayName": "Code de la Garantie IPT", 
+        "description": "Code de la Garantie IPT"
+      }, 
+      "axaCODMOT": {
+        "displayName": "Code Moto", 
+        "description": "Code Moto"
+      }, 
+      "horsePower": {
+        "displayName": "Puissance r\u00e9elle ou cylindr\u00e9e", 
+        "description": "Puissance r\u00e9elle ou cylindr\u00e9e"
+      }, 
+      "axaDTEXP": {
+        "displayName": "Date d'expertise", 
+        "description": "Date d'expertise"
+      }, 
+      "kilometers": {
+        "displayName": "Kilom\u00e9trage", 
+        "description": "Kilom\u00e9trage du compteur de la voiture"
+      }, 
+      "axaTXBON": {
+        "displayName": "Taux de Bonus /Malus", 
+        "description": "Taux de Bonus /Malus"
+      }, 
+      "gearbox": {
+        "displayName": "Boite de vitesse", 
+        "description": "Boite automatique"
+      }, 
+      "class": {
+        "displayName": "Classe du v\u00e9hicule", 
+        "description": "Classe du v\u00e9hicule"
+      }, 
+      "axaCDGNM": {
+        "displayName": "Code de Garantie Dommage Auto", 
+        "description": "Code de Garantie Dommage Auto"
+      }, 
+      "axaIDGAT": {
+        "displayName": "Indicateur de Garantie Attentat", 
+        "description": "Indicateur de Garantie Attentat"
+      }, 
+      "axaIDDEP": {
+        "displayName": "Code Garantie D\u00e9pannage", 
+        "description": "Code Garantie D\u00e9pannage"
+      }, 
+      "axaCDCATEM": {
+        "displayName": "Code cat\u00e9gorie Moto", 
+        "description": "Code cat\u00e9gorie Moto"
+      }, 
+      "prevVehicleAge": {
+        "displayName": "Dur\u00e9e de d\u00e9tention du v\u00e9hicule pr\u00e9c\u00e9dent", 
+        "description": "Dur\u00e9e de d\u00e9tention du v\u00e9hicule pr\u00e9c\u00e9dent"
+      }, 
+      "axaVALCONVH": {
+        "displayName": "Valeur de contenu du v\u00e9hicule", 
+        "description": "Valeur de contenu du v\u00e9hicule"
+      }, 
+      "axaCDGAS": {
+        "displayName": "Code Garantie Assistance", 
+        "description": "Code Garantie Assistance"
+      }, 
+      "axaCDVAC": {
+        "displayName": "Code Valeur conventionnelle", 
+        "description": "Code Valeur conventionnelle"
+      }, 
+      "value": {
+        "displayName": "Valeur du v\u00e9hicule", 
+        "description": "Valeur du v\u00e9hicule"
+      }, 
+      "axaIDGAD": {
+        "displayName": "Indicateur de Garantie Defense Recours", 
+        "description": "Indicateur de Garantie Defense Recours"
+      }, 
+      "axaIDGAG": {
+        "displayName": "Indicateur de Garantie Bris de Glace", 
+        "description": "Indicateur de Garantie Bris de Glace"
+      }, 
+      "axaPANMC": {
+        "displayName": "Garantie Panne M\u00e9canique", 
+        "description": "Garantie Panne M\u00e9canique"
+      }, 
+      "axaIDGAC": {
+        "displayName": "Code de la Garantie Catastrophe naturelle", 
+        "description": "Code de la Garantie Catastrophe naturelle"
+      }, 
+      "axaCDGEN": {
+        "displayName": "Genre du v\u00e9hicule", 
+        "description": "Genre du v\u00e9hicule (cyclo; 4 roues.)"
+      }, 
+      "axaCDVIL": {
+        "displayName": "Nom code postal de la ville du conducteur", 
+        "description": "Nom code postal de la ville du conducteur"
+      }, 
+      "axaCDBAG": {
+        "displayName": "Code Extention de garantie bagage", 
+        "description": "Code Extention de garantie bagage"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "RiskVehicle", 
+    "version": "2", 
+    "identificationField": "contractId"
+  }, 
+  {
+    "displayName": "Scores d'assur\u00e9", 
+    "description": "Mes scores d'assur\u00e9. Utilis\u00e9s pour le calcul du prix de mes primes d'assurance. (auto, moto, sant\u00e9, ...). Origine : AXA.", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "axaSC_AUTO": {
+        "displayName": "Score de souscription Auto", 
+        "description": "Score de souscription Auto"
+      }, 
+      "axaSC_CC_KRT": {
+        "displayName": "Score de souscription compte courant et carte", 
+        "description": "Score de souscription compte courant et carte"
+      }, 
+      "axaSC_SAN": {
+        "displayName": "Score de souscription Sant\u00e9", 
+        "description": "Score de souscription Sant\u00e9"
+      }, 
+      "axaSC_DEM": {
+        "displayName": "Score d\u00e9m\u00e9nagement", 
+        "description": "Score d\u00e9m\u00e9nagement"
+      }, 
+      "axaSC_Liv_AB": {
+        "displayName": "Score de souscription Livret AXA Banque", 
+        "description": "Score de souscription Livret AXA Banque"
+      }, 
+      "axaSC_RACHAT": {
+        "displayName": "Score rachat Assurance Vie", 
+        "description": "Score rachat Assurance Vie"
+      }, 
+      "axaSC_AUTO_AUTO": {
+        "displayName": "Score de souscription Auto d\u00e9tenteurs Auto", 
+        "description": "Score de souscription Auto d\u00e9tenteurs Auto"
+      }, 
+      "axaSC_EPA": {
+        "displayName": "Score de souscription Epargne", 
+        "description": "Score de souscription Epargne"
+      }, 
+      "axaSC_EPA_EPA": {
+        "displayName": "Score de souscription Epargne d\u00e9tenteurs Epargne", 
+        "description": "Score de souscription Epargne d\u00e9tenteurs Epargne"
+      }, 
+      "axaSC_FRAG_SAN": {
+        "displayName": "Score de fragilit\u00e9 Sant\u00e9", 
+        "description": "Score de fragilit\u00e9 Sant\u00e9"
+      }, 
+      "axaSC_REVERS": {
+        "displayName": "Score reversement Assurance Vie", 
+        "description": "Score reversement Assurance Vie"
+      }, 
+      "axaSC_PRV_PRO": {
+        "displayName": "Score de souscription Pr\u00e9voyance pro", 
+        "description": "Score de souscription Pr\u00e9voyance pro"
+      }, 
+      "axaSC_PRV": {
+        "displayName": "Score de souscription Pr\u00e9voyance", 
+        "description": "Score de souscription Pr\u00e9voyance"
+      }, 
+      "axaSC_FRAG_PJ": {
+        "displayName": "Score de fragilit\u00e9 Protection Juridique", 
+        "description": "Score de fragilit\u00e9 Protection Juridique"
+      }, 
+      "axaSC_PRET_PERS": {
+        "displayName": "Score de souscription pr\u00e0\u00aat personnel", 
+        "description": "Score de souscription pr\u00e0\u00aat personnel"
+      }, 
+      "axaSC_MRH": {
+        "displayName": "Score de souscription MRH", 
+        "description": "Score de souscription MRH"
+      }, 
+      "axaSC_MRP": {
+        "displayName": "Score de souscription MRP", 
+        "description": "Score de souscription MRP"
+      }, 
+      "axaSC_MOTO": {
+        "displayName": "Score de souscription Moto", 
+        "description": "Score de souscription Moto"
+      }, 
+      "axaSC_RETR": {
+        "displayName": "Score de souscription Retraite", 
+        "description": "Score de souscription Retraite"
+      }, 
+      "axaSC_CRD": {
+        "displayName": "Score souscription Cr\u00e9dit r\u00e9serve argent", 
+        "description": "Score souscription Cr\u00e9dit r\u00e9serve argent"
+      }, 
+      "axaSC_PFI": {
+        "displayName": "Score de souscription PFI", 
+        "description": "Score de souscription PFI"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "InsuranceScoring", 
+    "version": "2", 
+    "identificationField": "origin"
+  }, 
+  {
+    "displayName": "Tarification", 
+    "description": "Les tarifications qui me sont appliqu\u00e9es et mes paiements (mode de paiement, cotisations, ...). Origine : AXA m\u00e0\u00a0j mensuelle.", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "axaNBFRA": {
+        "displayName": "Nombre de franchises", 
+        "description": "Nombre de franchises"
+      }, 
+      "axaCDENCAI": {
+        "displayName": "Encaissement des factures direct ou confi\u00e9", 
+        "description": "Encaissement des factures direct ou confi\u00e9"
+      }, 
+      "axaCDMODPAI": {
+        "displayName": "Mode de paiement", 
+        "description": "Mode de paiement : pr\u00e9l\u00e8vement , automatique, ch\u00e8que,carte bancaire,traites, T.I.P,pr\u00e9l\u00e8vement AXA CREDIT,autres"
+      }, 
+      "axaMTCOTTCA": {
+        "displayName": "Cotisation TTC annuelle", 
+        "description": "Cotisation TTC annuelle"
+      }, 
+      "axaCDFRC": {
+        "displayName": "code de fractionnement des cotisations", 
+        "description": "code de fractionnement des cotisations"
+      }, 
+      "axaNBCOT": {
+        "displayName": "Nombre total de cotisation sur un contrat", 
+        "description": "Nombre total de cotisation sur un contrat"
+      }, 
+      "axaNBHPR": {
+        "displayName": "Nombre de faits de production", 
+        "description": "Nombre de faits de production"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Tarification", 
+    "version": "2", 
+    "identificationField": "contractId"
+  }, 
+  {
+    "displayName": "Risque", 
+    "description": "Mes facteurs de risques, pour mon assurance. Origine\u00a0: AXA \u20ac\u201c m\u00e0\u00a0j mensuelle", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "axaIDGSI001": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI003": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI002": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI005": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI004": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI007": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI006": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI009": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI008": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaNBPAS": {
+        "displayName": "Nombre de personnes assur\u00e9es", 
+        "description": "Nombre de personnes assur\u00e9es"
+      }, 
+      "axaCDSCA4": {
+        "displayName": "Code sous garantie", 
+        "description": "Code sous garantie"
+      }, 
+      "axaCDSCA1": {
+        "displayName": "Code sous garantie", 
+        "description": "Code sous garantie"
+      }, 
+      "axaCDSCA3": {
+        "displayName": "Code sous garantie", 
+        "description": "Code sous garantie"
+      }, 
+      "axaCDSCA2": {
+        "displayName": "Code sous garantie", 
+        "description": "Code sous garantie"
+      }, 
+      "axaCDIVILRQ": {
+        "displayName": "Code INSEE de la ville du risque", 
+        "description": "Code INSEE de la ville du risque"
+      }, 
+      "axaIDGSI014": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI015": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI012": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI013": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI010": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaIDGSI011": {
+        "displayName": "Indicateurs de garanties de sinistre", 
+        "description": "Indicateurs de garanties de sinistre"
+      }, 
+      "axaDTEFR": {
+        "displayName": "Date d'effet du risque", 
+        "description": "Date d'effet du risque"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Risk", 
+    "version": "2", 
+    "identificationField": "contractId"
+  }, 
+  {
+    "displayName": "Quittance", 
+    "description": "Mes quittances d'assurance (jour du pr\u00e9l\u00e8vement, mise en demeure,...). Origine\u00a0: AXA \u20ac\u201c m\u00e0\u00a0j mensuelle", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "axaDTMED": {
+        "displayName": "Date de mise en demeure", 
+        "description": "Date de mise en demeure"
+      }, 
+      "axaNBQTDEE": {
+        "displayName": "Nombre de quittance en demeure depuis emission", 
+        "description": "Nombre de quittance en demeure depuis emission"
+      }, 
+      "axaDTDMD": {
+        "displayName": "Date de derni\u00e8re mise en demeure", 
+        "description": "Date de derni\u00e8re mise en demeure"
+      }, 
+      "axaNBTOTMD": {
+        "displayName": "Nombre totale de Mise en Demeure", 
+        "description": "Nombre totale de Mise en Demeure"
+      }, 
+      "axaNBQTTOT": {
+        "displayName": "Nombre de quittance totale depuis emission", 
+        "description": "Nombre de quittance totale depuis emission"
+      }, 
+      "axaNBMED": {
+        "displayName": "Nombre de mise en demeure", 
+        "description": "Nombre de mise en demeure"
+      }, 
+      "axaCDPMT": {
+        "displayName": "Code Mode de Paiement Pr\u00e9vu au contrat", 
+        "description": "Code Mode de Paiement Pr\u00e9vu au contrat"
+      }, 
+      "axaDTPRLJ": {
+        "displayName": "Jour du pr\u00e9l\u00e8vement bancaire", 
+        "description": "Jour du pr\u00e9l\u00e8vement bancaire"
+      }, 
+      "axaNBHGE": {
+        "displayName": "Nombre d'historique de gestion", 
+        "description": "Nombre d'historique de gestion"
+      }, 
+      "axaCDIMP": {
+        "displayName": "Code Impay\u00e9", 
+        "description": "Code Impay\u00e9"
+      }, 
+      "axaDTREG": {
+        "displayName": "Date de r\u00e9gularisation du contrat", 
+        "description": "Date de r\u00e9gularisation du contrat"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Quittance", 
+    "version": "2", 
+    "identificationField": "origin"
+  }, 
+  {
+    "displayName": "Contrat d'assurance", 
+    "description": "Mes contrats d'assurance (num\u00e9ro, titulaires, personnes assur\u00e9es, ...). Origine : AXA.", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "axaLIGAR001": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaLIGAR002": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaLIGAR003": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaLIGAR004": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaLIGAR005": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaLIGAR006": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaLIGAR007": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaLIGAR008": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaLIGAR009": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaDTJUS": {
+        "displayName": "Date de fourniture du justificatif", 
+        "description": "Date de fourniture du justificatif"
+      }, 
+      "axaLIGAR010": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaDTEFPROD": {
+        "displayName": "Date d'effet du contrat", 
+        "description": "Date d'effet du contrat"
+      }, 
+      "premium": {
+        "displayName": "Prime du contrat", 
+        "description": "Prime TTC actuelle du contrat"
+      }, 
+      "axaDTECH": {
+        "displayName": "Date du prochain terme", 
+        "description": "Date du prochain terme"
+      }, 
+      "axaDTFRP": {
+        "displayName": "Date d'effet de remplacement", 
+        "description": "Date d'effet de remplacement"
+      }, 
+      "axaDTFRS": {
+        "displayName": "Date d'effet de la r\u00e9siliation", 
+        "description": "Date d'effet de la r\u00e9siliation"
+      }, 
+      "axaCDCNT": {
+        "displayName": "Type de contrat (normal ou groupement)", 
+        "description": "Type de contrat (normal ou groupement)"
+      }, 
+      "axaITFAMPRO": {
+        "displayName": "Famille de Produit", 
+        "description": "Famille de Produit"
+      }, 
+      "axaDTFAN": {
+        "displayName": "Date d'effet de l'affaire nouvelle", 
+        "description": "Date d'effet de l'affaire nouvelle"
+      }, 
+      "axaCDMOTRES": {
+        "displayName": "Motif de la r\u00e9siliation", 
+        "description": "Motif de la r\u00e9siliation"
+      }, 
+      "axaMOISA": {
+        "displayName": "Mois d'anniversaire du contrat", 
+        "description": "Mois d'anniversaire du contrat"
+      }, 
+      "axaNUMABO2": {
+        "displayName": "Num\u00e9ro de la personne titulaire secondaire du contrat", 
+        "description": "Num\u00e9ro de la personne titulaire secondaire du contrat"
+      }, 
+      "axaNUMABO1": {
+        "displayName": "Num\u00e9ro de la personne titulaire principale du contrat", 
+        "description": "Num\u00e9ro de la personne titulaire principale du contrat"
+      }, 
+      "axaLIGAR013": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaLIGAR012": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaLIGAR011": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaCDENC": {
+        "displayName": "contrat en cours \u00e0\u00a0 la vue", 
+        "description": "contrat en cours \u00e0\u00a0 la vue (0=non / 1=oui)"
+      }, 
+      "axaNBSUSP": {
+        "displayName": "Nombre de suspensions", 
+        "description": "Nombre de suspensions"
+      }, 
+      "axaLIGAR015": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaLIGAR014": {
+        "displayName": "Libell\u00e9 de garantie", 
+        "description": "Libell\u00e9 de garantie"
+      }, 
+      "axaCDFRACT": {
+        "displayName": "Code fractionnement", 
+        "description": "Code fractionnement"
+      }, 
+      "axaCDFRACP": {
+        "displayName": "Fractionnement du paiement de cotisation", 
+        "description": "Fractionnement du paiement de cotisation"
+      }, 
+      "axaDTMAN": {
+        "displayName": "Date d emission de l'affaire nouvelle", 
+        "description": "Date d emission de l'affaire nouvelle"
+      }, 
+      "contractId": {
+        "displayName": "Num\u00e9ro de contrat", 
+        "description": "Num\u00e9ro de contrat"
+      }, 
+      "axaENFAS": {
+        "displayName": "Enfant d'assur\u00e9- Formule Etudiant", 
+        "description": "Enfant d'assur\u00e9- Formule Etudiant"
+      }, 
+      "axaIDCNTEMP": {
+        "displayName": "Existence ou non d'un contrat temporaire", 
+        "description": "Existence ou non d'un contrat temporaire"
+      }, 
+      "axaDTRESI": {
+        "displayName": "Date du dernier mouvement de production", 
+        "description": "Date du dernier mouvement de production"
+      }, 
+      "axaCDFAMUV": {
+        "displayName": "Famille Technique de produit", 
+        "description": "Famille Technique de produit"
+      }, 
+      "axaCDENCY": {
+        "displayName": "contrat en cours au 1er Janvier", 
+        "description": "contrat en cours au 1er Janvier (0=non / 1=oui)"
+      }, 
+      "axaCRWEBAXA": {
+        "displayName": "Contrat AXA cr\u00e9e en ligne", 
+        "description": "Contrat AXA cr\u00e9\u00e9 en ligne"
+      }, 
+      "axaCDETACNT": {
+        "displayName": "Etat du contrat", 
+        "description": "Etat du contrat"
+      }, 
+      "axaDTMRS": {
+        "displayName": "Date d emission de la r\u00e9siliation", 
+        "description": "Date d emission de la r\u00e9siliation"
+      }, 
+      "axaDTMRP": {
+        "displayName": "Date d emission de remplacement", 
+        "description": "Date d emission de remplacement"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "InsuranceContract", 
+    "version": "2", 
+    "identificationField": "contractId"
+  }, 
+  {
+    "displayName": "Assurance vie", 
+    "description": "Mes contrats d'assurance vie (montants, programmation des versement, ...). Origine : AXA \u20ac\u201c m\u00e0\u00a0j mensuelle..", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "axaMT_UC": {
+        "displayName": "Montant de PM sur UC", 
+        "description": "Montant de PM sur UC"
+      }, 
+      "axaMTCOZIL": {
+        "displayName": "Montant des inventaires", 
+        "description": "Montant des inventaires"
+      }, 
+      "axaDURPAIE": {
+        "displayName": "Dur\u00e9e des paiements des primes", 
+        "description": "Dur\u00e9e des paiements des primes"
+      }, 
+      "axaNB_RP": {
+        "displayName": "Nombre de rachats partiels", 
+        "description": "Nombre de rachats partiels"
+      }, 
+      "axaNB_VPP": {
+        "displayName": "Nombre de versements programm\u00e9s", 
+        "description": "Nombre de versements programm\u00e9s"
+      }, 
+      "cliisf": {
+        "displayName": "Client impos\u00e9 ISF", 
+        "description": "Client impos\u00e9 ISF"
+      }, 
+      "axaMT_FAF": {
+        "displayName": "Montant des fonds \u00e0\u00a0 fenetres", 
+        "description": "Montant des fonds \u00e0\u00a0 fenetres"
+      }, 
+      "axaMTPMEPA": {
+        "displayName": "Montant Assurance Vie  \u00e0\u00a0 la vue", 
+        "description": "Montant Assurance Vie  \u00e0\u00a0 la vue"
+      }, 
+      "axaMT_DYNDIVERSI": {
+        "displayName": "Montant sur support dynamique diversifi\u00e9", 
+        "description": "Montant sur support dynamique diversifi\u00e9"
+      }, 
+      "axaMT_IMMOBILIER": {
+        "displayName": "Montant sur support immobilier", 
+        "description": "Montant sur support immobilier"
+      }, 
+      "axaMT_VL": {
+        "displayName": "Montant de versements libres", 
+        "description": "Montant de versements libres"
+      }, 
+      "axaMT_NON_AFFECT": {
+        "displayName": "Montant non affect\u00e9 en Euro ou UC", 
+        "description": "Montant non affect\u00e9 en Euro ou UC"
+      }, 
+      "axaMT_V1": {
+        "displayName": "Montant de versement initial", 
+        "description": "Montant de versement initial"
+      }, 
+      "axaDATMCET": {
+        "displayName": "Date de mise \u00e0\u00a0 jour du contrat", 
+        "description": "Date de mise \u00e0\u00a0 jour du contrat"
+      }, 
+      "axaCDFRAC": {
+        "displayName": "Code de Fractionnement", 
+        "description": "Code de Fractionnement"
+      }, 
+      "axaCODFISC": {
+        "displayName": "Code fiscal", 
+        "description": "Code fiscal"
+      }, 
+      "axaMT_FD_GARANTI": {
+        "displayName": "Montant sur fond garantie", 
+        "description": "Montant sur fond garantie"
+      }, 
+      "axaMT_AVANCES": {
+        "displayName": "Montant des avances", 
+        "description": "Montant des avances"
+      }, 
+      "axaDATECH": {
+        "displayName": "Date d'\u00e9ch\u00e9ance du contrat", 
+        "description": "Date d'\u00e9ch\u00e9ance du contrat"
+      }, 
+      "axaMT_DIVERSIFIE": {
+        "displayName": "Montant sur support diversifi\u00e9", 
+        "description": "Montant sur support diversifi\u00e9"
+      }, 
+      "axaMT_ACTION": {
+        "displayName": "Montant des actions", 
+        "description": "Montant des actions"
+      }, 
+      "axaMT_VPP": {
+        "displayName": "Montant de versements programm\u00e9s", 
+        "description": "Montant de versements programm\u00e9s"
+      }, 
+      "axaMT_OBLIGATION": {
+        "displayName": "Montant des obligations", 
+        "description": "Montant des obligations"
+      }, 
+      "axaDURCTV": {
+        "displayName": "Dur\u00e9e du contrat en mois", 
+        "description": "Dur\u00e9e du contrat en mois"
+      }, 
+      "axaMT_RP": {
+        "displayName": "Montant de rachats partiels", 
+        "description": "Montant de rachats partiels"
+      }, 
+      "axaMT_EURO": {
+        "displayName": "Montant en euros", 
+        "description": "Montant en euros"
+      }, 
+      "axaMT_TOT": {
+        "displayName": "Montant de La PM", 
+        "description": "Montant de La PM"
+      }, 
+      "axaNB_VL": {
+        "displayName": "Nombre de versements libres", 
+        "description": "Nombre de versements libres"
+      }, 
+      "gesprofi": {
+        "displayName": "Type de Gestion", 
+        "description": "Type de Gestion"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Savings", 
+    "version": "2", 
+    "identificationField": "contractId"
+  }, 
+  {
+    "displayName": "Contrat", 
+    "description": "Mes contrats (d\u00e9but, \u00e9ch\u00e9ance, impay\u00e9s, paiement, ...). Origine : AXA - m\u00e0\u00a0j mensuelle.", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "axaCDAVT": {
+        "displayName": "Code de la nature de l'avenant", 
+        "description": "Code de la nature de l'avenant"
+      }, 
+      "axaNBTOTMD": {
+        "displayName": "Nombre totale de Mise en Demeure", 
+        "description": "Nombre totale de Mise en Demeure"
+      }, 
+      "axaDURPAIE": {
+        "displayName": "Dur\u00e9e des paiements des primes", 
+        "description": "Dur\u00e9e des paiements des primes"
+      }, 
+      "axaDTEFPROD": {
+        "displayName": "Date d'effet du contrat", 
+        "description": "Date d'effet du contrat"
+      }, 
+      "axaDTECH": {
+        "displayName": "Date du prochain terme", 
+        "description": "Date du prochain terme"
+      }, 
+      "axaNBQTDEE": {
+        "displayName": "Nombre de quittance en demeure depuis emission", 
+        "description": "Nombre de quittance en demeure depuis emission"
+      }, 
+      "axaDTDMD": {
+        "displayName": "Date de derni\u00e8re mise en demeure", 
+        "description": "Date de derni\u00e8re mise en demeure"
+      }, 
+      "axaCDPMT": {
+        "displayName": "Code Mode de Paiement Pr\u00e9vu au contrat", 
+        "description": "Code Mode de Paiement Pr\u00e9vu au contrat"
+      }, 
+      "axaCDMOTRES": {
+        "displayName": "Motif de la r\u00e9siliation", 
+        "description": "Motif de la r\u00e9siliation"
+      }, 
+      "axaMOISA": {
+        "displayName": "Mois d'anniversaire du contrat", 
+        "description": "Mois d'anniversaire du contrat"
+      }, 
+      "axaDTMED": {
+        "displayName": "Date de mise en demeure", 
+        "description": "Date de mise en demeure"
+      }, 
+      "axaCDENC": {
+        "displayName": "contrat en cours \u00e0\u00a0 la vue", 
+        "description": "contrat en cours \u00e0\u00a0 la vue (0=non / 1=oui)"
+      }, 
+      "axaNBSUSP": {
+        "displayName": "Nombre de suspensions", 
+        "description": "Nombre de suspensions"
+      }, 
+      "axaDATMCET": {
+        "displayName": "Date de mise \u00e0\u00a0 jour du contrat", 
+        "description": "Date de mise \u00e0\u00a0 jour du contrat"
+      }, 
+      "axaCDMODPAI": {
+        "displayName": "Mode de paiement", 
+        "description": "Mode de paiement : pr\u00e9l\u00e8vement , automatique, ch\u00e8que,carte bancaire,traites, T.I.P,pr\u00e9l\u00e8vement AXA CREDIT,autres"
+      }, 
+      "axaNBMED": {
+        "displayName": "Nombre de mise en demeure", 
+        "description": "Nombre de mise en demeure"
+      }, 
+      "axaDATECH": {
+        "displayName": "Date d'\u00e9ch\u00e9ance du contrat", 
+        "description": "Date d'\u00e9ch\u00e9ance du contrat"
+      }, 
+      "axaNBCOT": {
+        "displayName": "Nombre total de cotisation sur un contrat", 
+        "description": "Nombre total de cotisation sur un contrat"
+      }, 
+      "axaNBHGE": {
+        "displayName": "Nombre d'historique de gestion", 
+        "description": "Nombre d'historique de gestion"
+      }, 
+      "contractId": {
+        "displayName": "Num\u00e9ro de contrat", 
+        "description": "Num\u00e9ro de contrat"
+      }, 
+      "axaNBQTTOT": {
+        "displayName": "Nombre de quittance totale depuis emission", 
+        "description": "Nombre de quittance totale depuis emission"
+      }, 
+      "axaDURCTV": {
+        "displayName": "Dur\u00e9e du contrat en mois", 
+        "description": "Dur\u00e9e du contrat en mois"
+      }, 
+      "axaCDENCY": {
+        "displayName": "contrat en cours au 1er Janvier", 
+        "description": "contrat en cours au 1er Janvier (0=non / 1=oui)"
+      }, 
+      "axaCDETACNT": {
+        "displayName": "Etat du contrat", 
+        "description": "Etat du contrat"
+      }, 
+      "axaCDIMP": {
+        "displayName": "Code Impay\u00e9", 
+        "description": "Code Impay\u00e9"
+      }, 
+      "axaDTREG": {
+        "displayName": "Date de r\u00e9gularisation du contrat", 
+        "description": "Date de r\u00e9gularisation du contrat"
+      }, 
+      "axaDTPRLJ": {
+        "displayName": "Jour du pr\u00e9l\u00e8vement bancaire", 
+        "description": "Jour du pr\u00e9l\u00e8vement bancaire"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Contract", 
+    "version": "2", 
+    "identificationField": "contractId"
+  }, 
+  {
+    "displayName": "Contrat d'assurance Habitation", 
+    "description": "Mes contrats d'assurance habitation (capital assur\u00e9, options arbres, ...). Origine : Axa - m\u00e0\u00a0j mensuelle.", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "formula": {
+        "displayName": "Formule MRH", 
+        "description": "Formule du contrat Multi Risque Habitation"
+      }, 
+      "axaCDQUALP": {
+        "displayName": "Code Qualit\u00e9 de Propri\u00e9taire du Bien", 
+        "description": "Code Qualit\u00e9 de Propri\u00e9taire du Bien"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "HomeInsuranceContract", 
+    "version": "2", 
+    "identificationField": "contractId"
+  }, 
+  {
+    "displayName": "Personne", 
+    "description": "Informations personnelles sur moi ou des personnes qui me sont proches (nom, pr\u00e9nom, CSP, situation familliale, ...). Origine : AXA, Intermarch\u00e9 - m\u00e0j mensuelle", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "drivingLicenceDate": {
+        "displayName": "Date d'obtention du permis de conduire", 
+        "description": "Date d'obtention du permis de conduire"
+      }, 
+      "maritalStatus": {
+        "displayName": "Situation familiale", 
+        "description": "Situation familiale"
+      }, 
+      "countryCode": {
+        "displayName": "Code Pays", 
+        "description": "Code Pays de l'adresse du souscripteur"
+      }, 
+      "cspJoint": {
+        "displayName": "CSP du conjoint", 
+        "description": "CSP du conjoint"
+      }, 
+      "axaNBPRM": {
+        "displayName": "Nombre de permis de conduire au foyer", 
+        "description": "Nombre de permis de conduire au foyer"
+      }, 
+      "postcode": {
+        "displayName": "Code postal", 
+        "description": "Code postal"
+      }, 
+      "axaDTNACONJ": {
+        "displayName": "date de naissance du conjoint", 
+        "description": "date de naissance du conjoint"
+      }, 
+      "address1": {
+        "displayName": "Adresse1", 
+        "description": "Adresse du client"
+      }, 
+      "cliisf": {
+        "displayName": "Client impos\u00e9 ISF", 
+        "description": "Client impos\u00e9 ISF"
+      }, 
+      "occupation": {
+        "displayName": "Profession", 
+        "description": "Profession"
+      }, 
+      "city": {
+        "displayName": "Ville", 
+        "description": "Ville du client"
+      }, 
+      "birthdateChild4": {
+        "displayName": "date de naissance du 4e enfant", 
+        "description": "date de naissance du 4e enfant"
+      }, 
+      "hasChildren": {
+        "displayName": "Enfants", 
+        "description": "Enfants \u00e0\u00a0 charge ou non"
+      }, 
+      "mobilePhoneNumber": {
+        "displayName": "Mobile", 
+        "description": "Num\u00e9ro de t\u00e9l\u00e9phone mobile"
+      }, 
+      "axaCDBNQCLI": {
+        "displayName": "Banque", 
+        "description": "Banque du client"
+      }, 
+      "proPhoneNumber": {
+        "displayName": "T\u00e9l\u00e9phone pro", 
+        "description": "Num\u00e9ro de t\u00e9l\u00e9phone pro"
+      }, 
+      "phoneNumber": {
+        "displayName": "T\u00e9l\u00e9phone priv\u00e9", 
+        "description": "Num\u00e9ro de t\u00e9l\u00e9phone priv\u00e9"
+      }, 
+      "timestamp": {
+        "displayName": "Date de mise \u00e0\u00a0 jour", 
+        "description": "Date de mise \u00e0\u00a0 jour"
+      }, 
+      "axaCDSFM": {
+        "displayName": "Situation matrimoniale", 
+        "description": "Situation matrimoniale"
+      }, 
+      "axaCDCPP": {
+        "displayName": "Parent\u00e9 du conducteur Principal", 
+        "description": "Parent\u00e9 du conducteur Principal"
+      }, 
+      "csp": {
+        "displayName": "CSP", 
+        "description": "CSP du client"
+      }, 
+      "axaCDINSEEC": {
+        "displayName": "Code INSEE de la commune", 
+        "description": "Code INSEE de la commune"
+      }, 
+      "birthdateChild2": {
+        "displayName": "date de naissance du 2e enfant", 
+        "description": "date de naissance du 2e enfant"
+      }, 
+      "birthdateChild3": {
+        "displayName": "date de naissance du 3e enfant", 
+        "description": "date de naissance du 3e enfant"
+      }, 
+      "birthPlace": {
+        "displayName": "Lieu de naissance", 
+        "description": "Lieu de naissance"
+      }, 
+      "birthdateChild1": {
+        "displayName": "date de naissance du 1er enfant", 
+        "description": "date de naissance du 1er enfant"
+      }, 
+      "firstname": {
+        "displayName": "Pr\u00e9nom", 
+        "description": "Pr\u00e9nom"
+      }, 
+      "birthdateChild5": {
+        "displayName": "date de naissance du 5e enfant", 
+        "description": "date de naissance du 5e enfant"
+      }, 
+      "lastname": {
+        "displayName": "Nom", 
+        "description": "Nom"
+      }, 
+      "axaNBVEF": {
+        "displayName": "Nombre de v\u00e9hicule au foyer", 
+        "description": "Nombre de v\u00e9hicule au foyer"
+      }, 
+      "proMobilePhoneNumber": {
+        "displayName": "Mobile Pro", 
+        "description": "Num\u00e9ro de t\u00e9l\u00e9phone mobile professionnel"
+      }, 
+      "axaCDMODLOG": {
+        "displayName": "Type de domiciliation", 
+        "description": "Propri\u00e9taire/Locataire/Occupant \u00e0\u00a0 titre Gratuit/Autre"
+      }, 
+      "gender": {
+        "displayName": "Genre", 
+        "description": "Masculin/F\u00e9minin aliment\u00e9 suivant la qualit\u00e9 Mme, Mlle,Mr"
+      }, 
+      "civility": {
+        "displayName": "Civilit\u00e9", 
+        "description": "Mlle, Mme, M. (Intermarch\u00e9)"
+      }, 
+      "birthdate": {
+        "displayName": "Date de naissance", 
+        "description": "date de naissance du titulaire de la fiche"
+      }, 
+      "email": {
+        "displayName": "Email", 
+        "description": "Adresse e-mail"
+      }, 
+      "homePhoneNumber": {
+        "displayName": "T\u00e9l. du domicile", 
+        "description": "Num\u00e9ro de t\u00e9l\u00e9phone du domicile"
+      }, 
+      "childrenCount": {
+        "displayName": "Nombre d'enfants", 
+        "description": "Nombre d'enfants \u00e0 charge"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Person", 
+    "version": "2", 
+    "identificationField": "firstname"
+  }, 
+  {
+    "displayName": "Primes", 
+    "description": "Mes primes d'assurance", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "axaMTPRC": {
+        "displayName": "Montant des primes comptables", 
+        "description": "Montant des primes comptables"
+      }, 
+      "axaMTPRA": {
+        "displayName": "Montant des primes acquises", 
+        "description": "Montant des primes acquises"
+      }, 
+      "axaSTEMI": {
+        "displayName": "Stock Prime Emise", 
+        "description": "Stock Prime Emise"
+      }, 
+      "axaSTPRA": {
+        "displayName": "Stock Prime Acquise", 
+        "description": "Stock Prime Acquise"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Premiums", 
+    "version": "2", 
+    "identificationField": "origin"
+  }, 
+  {
+    "displayName": "Client", 
+    "description": "Mes informations clients chez mes fournisseurs (date de d\u00e9but de relation, total annuel, segmentation, ...) . Origine : AXA - m\u00e0\u00a0j mensuelle, Intermarch\u00e9 - m\u00e0\u00a0j hedomadaire", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "optInPhone": {
+        "displayName": "Accepte t\u00e9l\u00e9phone", 
+        "description": "Accepte d'\u00eatre contact\u00e9 par t\u00e9l\u00e9phone. (Intermarch\u00e9)"
+      }, 
+      "intermarcheShopId": {
+        "displayName": "Identifiant point de vente", 
+        "description": "Code Point de vente consommateur. (Intermarch\u00e9)"
+      }, 
+      "entryDate": {
+        "displayName": "Date d'entr\u00e9e du client", 
+        "description": "Date d'entr\u00e9e du client. Date de cr\u00e9ation. Au format ISO8061 http://fr.wikipedia.org/wiki/ISO_8601. (AXA, Intermarch\u00e9)"
+      }, 
+      "axaCDVIPCRM": {
+        "displayName": "Clients VIP ou Who'who", 
+        "description": "Clients VIP ou Who'who"
+      }, 
+      "clientStep": {
+        "displayName": "\u00c9tape client", 
+        "description": "\u00c9tape vers la cr\u00e9ation de la relation client."
+      }, 
+      "axaNBECE": {
+        "displayName": "Nombre de contrats en cours", 
+        "description": "Nombre de contrats en cours. (AXA)"
+      }, 
+      "axaNBCVMATT": {
+        "displayName": "Indice attendu", 
+        "description": "Indice attendu. De 1 \u00e0\u00a0 5 (indices 4 et 5 = tr\u00e8s bons clients)."
+      }, 
+      "axaNBCVMACT": {
+        "displayName": "Indice actuel", 
+        "description": "Indice actuel. De 1 \u00e0\u00a0 5 (indices 4 et 5 = tr\u00e8s bons clients)."
+      }, 
+      "axaMTCOTTCA": {
+        "displayName": "Cotisation TTC annuelle", 
+        "description": "Cotisation TTC annuelle"
+      }, 
+      "optIn": {
+        "displayName": "A Adh\u00e9r\u00e9", 
+        "description": "opt in ou Non opt in ou Inconnu. (Intermarch\u00e9)"
+      }, 
+      "lastMeeting": {
+        "displayName": "Dernier rendez-vous", 
+        "description": "Derni\u00e8re rencontre du client."
+      }, 
+      "axaTOPDIS": {
+        "displayName": "Top distinction", 
+        "description": "Top distinction"
+      }, 
+      "optInEmail": {
+        "displayName": "Accepte email", 
+        "description": "Accepte d'\u00eate contact\u00e9 par email. (Intermarch\u00e9)"
+      }, 
+      "axaNBECY": {
+        "displayName": "Nombre de contrats en cours 01/01", 
+        "description": "Nombre de contrats en cours au 1 janvier. (AXA)"
+      }, 
+      "segmentation": {
+        "displayName": "Segmentation strat\u00e9gique", 
+        "description": "Segmentation strat\u00e9gique"
+      }, 
+      "loyaltyCardStatus": {
+        "displayName": "Statut carte de fid\u00e9lit\u00e9", 
+        "description": "Statut de la carte, active, non active. (Intermarch\u00e9)"
+      }, 
+      "wayOutDate": {
+        "displayName": "Date de sortie du client", 
+        "description": "Date de sortie du client. Correspond \u00e0 date de r\u00e9siliation. Au format ISO8061 http://fr.wikipedia.org/wiki/ISO_8601. (AXA, Intermarch\u00e9)"
+      }, 
+      "embrittlement": {
+        "displayName": "Fragilisation", 
+        "description": "La relation avec le client est-elle fragilis\u00e9e."
+      }, 
+      "timestamp": {
+        "displayName": "Date de mise \u00e0\u00a0 jour", 
+        "description": "Date de mise \u00e0\u00a0 jour"
+      }, 
+      "lastConnected": {
+        "displayName": "Derni\u00e8re connexion au site", 
+        "description": "Date de derni\u00e8re connexion au site."
+      }, 
+      "connected": {
+        "displayName": "Connexion au site", 
+        "description": "Top connexion \u00e0\u00a0 l'espace client 12 mois (0=non / 1=oui)"
+      }, 
+      "axaCDENCAI": {
+        "displayName": "Encaissement des factures direct ou confi\u00e9", 
+        "description": "Encaissement des factures direct ou confi\u00e9"
+      }, 
+      "axaCDPROENT": {
+        "displayName": "Produit d'entr\u00e9e du client", 
+        "description": "Produit d'entr\u00e9e du client"
+      }, 
+      "axaCDQUALC": {
+        "displayName": "Type du client", 
+        "description": "Particulier/Pro/Double Profil/Personne Morale"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Client", 
+    "version": "2", 
+    "identificationField": "origin"
+  }, 
+  {
+    "displayName": "V\u00e9hicule", 
+    "description": "Mes v\u00e9hicules, auto, moto. (immatriculation, puissance, age, kilom\u00e9trage, marque, ...). Origine : AXA - m\u00e0\u00a0j mensuelle.", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "axaCDFVE": {
+        "displayName": "Code famille de v\u00e9hicule", 
+        "description": "Code famille de v\u00e9hicule"
+      }, 
+      "firstRegistrationDate": {
+        "displayName": "Date de mise en circulation", 
+        "description": "Date de mise en circulation du v\u00e9hicule"
+      }, 
+      "usage": {
+        "displayName": "Usage", 
+        "description": "Usage du v\u00e9hicule"
+      }, 
+      "parking": {
+        "displayName": "Garage", 
+        "description": "Pr\u00e9sence de garage"
+      }, 
+      "axaIDVEG": {
+        "displayName": "V\u00e9hicule Haut de Gamme", 
+        "description": "V\u00e9hicule Haut de Gamme OUI/non"
+      }, 
+      "axaIDACH": {
+        "displayName": "Indicateur d'\u00e9tat \u00e0\u00a0 l'achat", 
+        "description": "Indicateur d'\u00e9tat du v\u00e9hicule \u00e0\u00a0 l'achat"
+      }, 
+      "registration": {
+        "displayName": "Num\u00e9ro d'immatriculation", 
+        "description": "Num\u00e9ro d'immatriculation"
+      }, 
+      "technicalCheck": {
+        "displayName": "Contr\u00e0\u00b4le technique", 
+        "description": "Contr\u00e0\u00b4le technique"
+      }, 
+      "axaCDCVH": {
+        "displayName": "Code classe du v\u00e9hicule", 
+        "description": "Code classe du v\u00e9hicule"
+      }, 
+      "axaCDGVE": {
+        "displayName": "Groupe du v\u00e9hicule", 
+        "description": "Groupe du v\u00e9hicule"
+      }, 
+      "tattoo": {
+        "displayName": "Indicateur du marquage des vitres", 
+        "description": "Indicateur du marquage des vitres"
+      }, 
+      "axaCDACH": {
+        "displayName": "Code du mode d'achat", 
+        "description": "Code du mode d'achat du v\u00e9hicule"
+      }, 
+      "axaTYPROUE": {
+        "displayName": "Type de roues", 
+        "description": "Type de roues"
+      }, 
+      "owningDuration": {
+        "displayName": "Dur\u00e9e de d\u00e9tention du v\u00e9hicule actuel", 
+        "description": "Dur\u00e9e de d\u00e9tention du v\u00e9hicule actuel"
+      }, 
+      "fuel": {
+        "displayName": "Carburant", 
+        "description": "Nature du carburant (essence, gazoil)"
+      }, 
+      "registrationDate": {
+        "displayName": "Date d'\u00e9tablissement de la carte grise", 
+        "description": "Date d'\u00e9tablissement de la carte grise"
+      }, 
+      "axaCODMOT": {
+        "displayName": "Code Moto", 
+        "description": "Code Moto"
+      }, 
+      "power": {
+        "displayName": "Puissance", 
+        "description": "Puisssance du v\u00e9hicule"
+      }, 
+      "horsePower": {
+        "displayName": "Puissance r\u00e9elle ou cylindr\u00e9e", 
+        "description": "Puissance r\u00e9elle ou cylindr\u00e9e"
+      }, 
+      "kilometers": {
+        "displayName": "Kilom\u00e9trage", 
+        "description": "Kilom\u00e9trage du compteur de la voiture"
+      }, 
+      "gearbox": {
+        "displayName": "Boite de vitesse", 
+        "description": "Boite automatique"
+      }, 
+      "class": {
+        "displayName": "Classe du v\u00e9hicule", 
+        "description": "Classe du v\u00e9hicule"
+      }, 
+      "axaCDCATEM": {
+        "displayName": "Code cat\u00e9gorie Moto", 
+        "description": "Code cat\u00e9gorie Moto"
+      }, 
+      "axaCDVAC": {
+        "displayName": "Code Valeur conventionnelle", 
+        "description": "Code Valeur conventionnelle"
+      }, 
+      "value": {
+        "displayName": "Valeur du v\u00e9hicule", 
+        "description": "Valeur du v\u00e9hicule"
+      }, 
+      "axaIDVHR": {
+        "displayName": "Indicateur V\u00e9hicule \u00e0\u00a0 Haut risque", 
+        "description": "Indicateur V\u00e9hicule \u00e0\u00a0 Haut risque (Oui/non)"
+      }, 
+      "axaCDVEH": {
+        "displayName": "Type de v\u00e9hicule", 
+        "description": "Type de v\u00e9hicule"
+      }, 
+      "axaCDGEN": {
+        "displayName": "Genre du v\u00e9hicule", 
+        "description": "Genre du v\u00e9hicule (cyclo; 4 roues.)"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Vehicle", 
+    "version": "2", 
+    "identificationField": "registration"
+  }, 
+  {
+    "displayName": "Risque Habitation", 
+    "description": "Les facteurs de risques pour mon habtitation (nombre de pi\u00e8ces, piscine, ...). Origine\u00a0: AXA \u20ac\u201c m\u00e0\u00a0j mensuelle", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "building": {
+        "displayName": "Type de construction", 
+        "description": "Type de construction"
+      }, 
+      "axaBDGET": {
+        "displayName": "Option BDG Etendue", 
+        "description": "Option BDG Etendue"
+      }, 
+      "axaPACKJ": {
+        "displayName": "Pack Jardin", 
+        "description": "Pack Jardin"
+      }, 
+      "axaPACKN": {
+        "displayName": "Pack Nouvelle Technologie", 
+        "description": "Pack Nouvelle Technologie"
+      }, 
+      "axaIDARB": {
+        "displayName": "Option Arbres et Arbustres", 
+        "description": "Option Arbres et Arbustres"
+      }, 
+      "residence": {
+        "displayName": "Type d'habitation", 
+        "description": "Type d'habitation (R\u00e9sidence Principale, ...)"
+      }, 
+      "axaPACKB": {
+        "displayName": "Pack D\u00e9pannage", 
+        "description": "Pack D\u00e9pannage"
+      }, 
+      "axaCDRAN": {
+        "displayName": "Option R\u00e9\u00e9quipement \u00e0\u00a0 neuf", 
+        "description": "Option R\u00e9\u00e9quipement \u00e0\u00a0 neuf"
+      }, 
+      "axaNBFRM": {
+        "displayName": "Nombre d'indices de Franchise MRH", 
+        "description": "Nombre d'indices de Franchise MRH"
+      }, 
+      "axaMTOBV": {
+        "displayName": "Montant du capital objets de valeurs", 
+        "description": "Montant du capital objets de valeurs"
+      }, 
+      "roomCount": {
+        "displayName": "Nombre de pi\u00e8ces", 
+        "description": "Nombre de pi\u00e8ces"
+      }, 
+      "axaPACKL": {
+        "displayName": "Pack Libradom", 
+        "description": "Pack Libradom"
+      }, 
+      "axaIDAGR": {
+        "displayName": "Option agression", 
+        "description": "Option agression"
+      }, 
+      "axaCDQUALO": {
+        "displayName": "Code Qualit\u00e9 d'occupation du Bien", 
+        "description": "Code Qualit\u00e9 d'occupation du Bien"
+      }, 
+      "axaPACKP": {
+        "displayName": "Pack Piscine", 
+        "description": "Pack Piscine"
+      }, 
+      "axaMTCAPASS": {
+        "displayName": "Montant du capital assur\u00e9", 
+        "description": "Montant du capital assur\u00e9"
+      }, 
+      "axaCDJUR": {
+        "displayName": "Option Protection Juridique", 
+        "description": "Option Protection Juridique"
+      }, 
+      "axaPACKV": {
+        "displayName": "Pack Energie Nouvelle", 
+        "description": "Pack Energie Nouvelle"
+      }, 
+      "axaIDDELMRH": {
+        "displayName": "Pr\u00e9sence OUI/NON de Dommage Electrique", 
+        "description": "Pr\u00e9sence OUI/NON de Dommage Electrique"
+      }, 
+      "axaPKREC": {
+        "displayName": "Pack Logement r\u00e9cent", 
+        "description": "Pack Logement r\u00e9cent"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "RiskHome", 
+    "version": "2", 
+    "identificationField": "contractId"
+  }, 
+  {
+    "displayName": "Domicile", 
+    "description": "Mon domicile (individuel ou collectif, taille, jardin ?, ...) Origine : AXA - m\u00e0\u00a0j mensuelle.", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "building": {
+        "displayName": "Type de construction", 
+        "description": "Type de construction"
+      }, 
+      "parkingType": {
+        "displayName": "Type de parking", 
+        "description": "Type de parking"
+      }, 
+      "axaPACKN": {
+        "displayName": "Pack Nouvelle Technologie", 
+        "description": "Pack Nouvelle Technologie"
+      }, 
+      "residence": {
+        "displayName": "Type d'habitation", 
+        "description": "Type d'habitation (R\u00e9sidence Principale, ...)"
+      }, 
+      "homeType": {
+        "displayName": "Occupation", 
+        "description": "avec inhabitation/sans inhabitation/donn\u00e9e en location/inhabitation < 90 jours/avec inhabitation/inhabitation > 90 jours/principale/secondaire"
+      }, 
+      "roomCount": {
+        "displayName": "Nombre de pi\u00e8ces", 
+        "description": "Nombre de pi\u00e8ces"
+      }, 
+      "axaPACKJ": {
+        "displayName": "Pack Jardin", 
+        "description": "Pack Jardin"
+      }, 
+      "axaPACKP": {
+        "displayName": "Pack Piscine", 
+        "description": "Pack Piscine"
+      }, 
+      "axaPKREC": {
+        "displayName": "Pack Logement r\u00e9cent", 
+        "description": "Pack Logement r\u00e9cent"
+      }, 
+      "buildingType": {
+        "displayName": "Type de construction", 
+        "description": "appartement/ mobil home/ immeuble/maison/rez de chauss\u00e9e"
+      }, 
+      "axaPACKV": {
+        "displayName": "Pack Energie Nouvelle", 
+        "description": "Pack Energie Nouvelle"
+      }, 
+      "axaANCLG": {
+        "displayName": "Anciennet\u00e9 dans le logement", 
+        "description": "Anciennet\u00e9 dans le logement"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "Home", 
+    "version": "2", 
+    "identificationField": "contractId"
+  }, 
+  {
+    "displayName": "Contrat d'assurance Auto", 
+    "description": "Mes contrats d'assurance Auto ou Moto (v\u00e9hicule, conducteurs assur\u00e9s, taux de bonus, bris de glace, ...).  Origine : AXA - m\u00e0\u00a0j mensuelle.", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "axaCDAVT": {
+        "displayName": "Code de la nature de l'avenant", 
+        "description": "Code de la nature de l'avenant"
+      }, 
+      "usage": {
+        "displayName": "Usage", 
+        "description": "Usage du v\u00e9hicule"
+      }, 
+      "axaIDVRP": {
+        "displayName": "V\u00e9hicule de remplacement", 
+        "description": "V\u00e9hicule de remplacement"
+      }, 
+      "axaCDAFN": {
+        "displayName": "Motif de l'affaire nouvelle", 
+        "description": "Motif de l'affaire nouvelle (achat ; r\u00e9siliation.)"
+      }, 
+      "axaNBPRM": {
+        "displayName": "Nombre de permis de conduire au foyer", 
+        "description": "Nombre de permis de conduire au foyer"
+      }, 
+      "insuranceLevel": {
+        "displayName": "Niveau de garantie", 
+        "description": "Niveau de garantie du v\u00e9hicule"
+      }, 
+      "axaNOMCIE": {
+        "displayName": "Assureur pr\u00e9c\u00e9dent", 
+        "description": "Nom de la compagnie ant\u00e9c\u00e9dente"
+      }, 
+      "axaDTAQUIS": {
+        "displayName": "Date de d\u00e9but d'usage", 
+        "description": "Date de d\u00e9but d'usage"
+      }, 
+      "axaNBVEF": {
+        "displayName": "Nombre de v\u00e9hicule au foyer", 
+        "description": "Nombre de v\u00e9hicule au foyer"
+      }, 
+      "prevVehicleKmage": {
+        "displayName": "Kilom\u00e9trage du compteur de la voiture pr\u00e9c\u00e9dente", 
+        "description": "Kilom\u00e9trage du compteur de la voiture pr\u00e9c\u00e9dente"
+      }, 
+      "axaIDCHV": {
+        "displayName": "Changement du v\u00e9hicule", 
+        "description": "Changement du v\u00e9hicule"
+      }, 
+      "axaDTEFA": {
+        "displayName": "Date d'effet des avenants", 
+        "description": "Date d'effet des avenants"
+      }, 
+      "axaNBAVT": {
+        "displayName": "Nombre d'avenants", 
+        "description": "Nombre d'avenants"
+      }, 
+      "axaDTABM": {
+        "displayName": "Date d'attribution du Bonus Malus", 
+        "description": "Date d'attribution du Bonus Malus"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "CarInsuranceContract", 
+    "version": "2", 
+    "identificationField": "contractId"
+  }, 
+  {
+    "displayName": "Sinistre", 
+    "description": "Mes sinistres d\u00e9clar\u00e9s \u00e0\u00a0 mon assurance (nombre de sinistres par ans). Origine : AXA - m\u00e0\u00a0j mensuelle.", 
+    "fields": {
+      "": {
+        "displayName": "", 
+        "description": ""
+      }, 
+      "axaNBSIN3": {
+        "displayName": "Nombre de sinistre ann\u00e9e N-3", 
+        "description": "Nombre de sinistre ann\u00e9e N-3"
+      }, 
+      "axaNBSIN2": {
+        "displayName": "Nombre de sinistre ann\u00e9e N-2", 
+        "description": "Nombre de sinistre ann\u00e9e N-2"
+      }, 
+      "axaNBSIN1": {
+        "displayName": "Nombre de sinistre ann\u00e9e N-1", 
+        "description": "Nombre de sinistre ann\u00e9e N-1"
+      }, 
+      "axaNBSIN0": {
+        "displayName": "Nombre de sinistre ann\u00e9e N", 
+        "description": "Nombre de sinistre ann\u00e9e N"
+      }, 
+      "axaCDRSP": {
+        "displayName": "code responsabilit\u00e9 de sinistre", 
+        "description": "code responsabilit\u00e9 de sinistre"
+      }, 
+      "axaNBSIN4": {
+        "displayName": "Nombre de sinistre ann\u00e9e N-4", 
+        "description": "Nombre de sinistre ann\u00e9e N-4"
+      }
+    }, 
+    "docType": "Metadoctype", 
+    "related": "InsuranceClaim", 
+    "version": "2", 
+    "identificationField": "contractId"
+  }
+]

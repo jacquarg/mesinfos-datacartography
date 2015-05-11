@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="100.00407"
+   height="91.312019"
+   viewBox="0 0 100.00407 91.31202"
+   enable-background="new 0 0 100 42.591"
+   xml:space="preserve"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="riskvehicle.svg"><metadata
+   id="metadata13"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs11" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1024"
+   inkscape:window-height="744"
+   id="namedview9"
+   showgrid="false"
+   inkscape:zoom="1.255"
+   inkscape:cx="10.14464"
+   inkscape:cy="105.49256"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0" />
+
+
+
+<g
+   id="g3024"
+   transform="matrix(0.61269976,0,0,0.61269976,19.262458,54.063171)"><path
+     id="path3"
+     d="m 19.525,24.44 c -5,0 -9.069,4.075 -9.069,9.089 0,4.986 4.069,9.062 9.069,9.062 5.013,0 9.088,-4.076 9.088,-9.062 0,-5.014 -4.075,-9.089 -9.088,-9.089 z m 0,13.972 c -2.676,0 -4.876,-2.201 -4.876,-4.883 0,-2.695 2.201,-4.896 4.876,-4.896 2.695,0 4.889,2.201 4.889,4.896 0,2.681 -2.194,4.883 -4.889,4.883 z"
+     inkscape:connector-curvature="0" /><path
+     id="path5"
+     d="m 80.632,24.44 c -5.007,0 -9.076,4.075 -9.076,9.089 0,4.986 4.069,9.062 9.076,9.062 5.006,0 9.068,-4.076 9.068,-9.062 0,-5.014 -4.062,-9.089 -9.068,-9.089 z m 0,13.972 c -2.695,0 -4.89,-2.201 -4.89,-4.883 0,-2.695 2.194,-4.896 4.89,-4.896 2.696,0 4.889,2.201 4.889,4.896 0,2.681 -2.194,4.883 -4.889,4.883 z"
+     inkscape:connector-curvature="0" /><path
+     id="path7"
+     d="m 98.249,26.732 c 0,-8.815 -5.495,-9.87 -5.495,-9.87 C 84.675,15.729 70.755,15.143 70.755,15.143 69.479,12.93 63.581,0 60.149,0 58.991,0 34.368,0 30.006,0 25.638,0 18.483,12.604 16.914,15.456 c 0,0 -5.482,0.938 -8.066,1.537 -1.432,0.325 -5.41,0.403 -5.41,11.51 H 0 v 5.026 h 8.366 c 0,-6.172 5.007,-11.172 11.159,-11.172 6.178,0 11.172,5 11.172,11.172 H 69.46 c 0,-6.172 4.986,-11.172 11.172,-11.172 6.165,0 11.165,5 11.165,11.172 H 100 V 26.732 H 98.249 z M 44.746,14.284 H 27.344 c 2.35,-7.331 6.712,-12.565 8.555,-12.565 2.311,0 8.848,0 8.848,0 v 12.565 z m 3.242,0 V 1.719 c 0,0 8.978,0 11.289,0 2.324,0 7.422,10.638 8.854,13.359 L 47.988,14.284 z"
+     inkscape:connector-curvature="0" /><g
+     transform="matrix(1.1883957,0,0,1.1883957,-31.438658,-88.274762)"
+     id="g3797"><path
+       d="m 2.9913,111.60033 c -0.913967,1.76129 -1.9912,3.408 -1.9913,5.341 l 0.00903,0.80788 c 0,4.172 3.265872,6.69412 7.020572,6.69412 l 121.319698,0 c 3.755,0 6.98886,-3.12652 6.98886,-7.29852 l -0.0399,-0.81148 c 0,-1.933 -0.95029,-3.61152 -1.991,-5.341 L 74.2239,3.2121275 c -2.6546,-2.94957 -6.9583,-2.94957 -9.6133,4e-4 L 2.9913,111.60033 z"
+       id="path1616"
+       sodipodi:nodetypes="ccccccccccc"
+       style="fill:none;stroke:#000000;stroke-width:2"
+       inkscape:connector-curvature="0" /><path
+       d="M 69.2213,6.8098275 5.798,118.64633 l 61.187,0 2.8521,0 60.5072,0 -60.3105,-111.8365025 -0.8125,0 z"
+       id="path1617"
+       style="fill:none;stroke:#000000;stroke-width:4.85160017;stroke-linecap:round;stroke-linejoin:round"
+       inkscape:connector-curvature="0" /></g></g></svg>
