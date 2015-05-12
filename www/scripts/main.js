@@ -1,7 +1,4 @@
 
-var STAMP_TMPL = '<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="110px" height="110px" id="svg2" version="1.1"><g id="layer1"><rect style="fill:none;stroke:#6ea546;stroke-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none" id="rect2985" width="105" height="105" x="2.5" y="2.5" /><text xml:space="preserve" style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Gabriola;-inkscape-font-specification:Gabriola" x="9.9208069" y="57.514099" id="text3755" ><tspan id="tspan3757" x="9.9208069" y="57.514099" style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial">mockdata-DOCTYPE</tspan></text></g></svg>';
-
-
 var displayJSON = function(data) { console.log(JSON.stringify(data, null, 2));};
 
 var g = {
@@ -11,13 +8,15 @@ var g = {
 var nodePositionByIds = {};
 
 async.parallel([
-  fetchFromSpreadsheet,
+  function(cb) {
+    fetchFromSpreadsheet(miConfig.spreadSheetUri, cb);
+  },
   // function(cb) {
   //   $.getJSON("datamodels/all_metadoctypes.json",
   //       function(metaDocTypes) { cb(null, metaDocTypes); });
   // },
   function(cb) {
-    $.getJSON("data/nodePositions.json",
+    $.getJSON(miConfig.positionsUri,
       function(data) { cb(null, data); });
   },
   function(cb) {
@@ -151,7 +150,9 @@ var generateSVG = function(metaDocType, callback) {
   // console.log(mySVG);
   // Create a Data URI.
       var mySVG = mySVG.replace('mockdata-DOCTYPE', type2DisplayName(metaDocType.type));
-  var mySrc = 'data:image/svg+xml;charset=utf-8,' + mySVG;
+      // set color, replcae default #6ea546 with speficied one :
+      mySVG = mySVG.replace(/#6ea546/g, miConfig.framesColor);
+    var mySrc = 'data:image/svg+xml;charset=utf-8,' + mySVG;
 
   // Load up our image.
   metaDocType.stampImg = new Image();

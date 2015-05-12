@@ -191,18 +191,18 @@
   },
   "ConsoElectrique": {
     "id": "ConsoElectrique",
-    "x": 0.20512881023101323,
-    "y": 0.32346475088677257
+    "x": 0.0563295031194872,
+    "y": 0.3637163920260993
   },
   "ConsoGaz": {
     "id": "ConsoGaz",
-    "x": 0.3958675092387309,
-    "y": 0.3278748942164308
+    "x": 0.15862938313688008,
+    "y": 0.35816464852912466
   },
   "Geolocalisation": {
     "id": "Geolocalisation",
-    "x": 0.09215715856887097,
-    "y": 0.6403260773807619
+    "x": 0.4631760206798581,
+    "y": 0.2726925576917044
   },
   "JournalAppel": {
     "id": "JournalAppel",
@@ -211,132 +211,52 @@
   },
   "Meteo": {
     "id": "Meteo",
-    "x": -0.014346018325878743,
-    "y": 0.6670122612372258
+    "x": 0.280580602649075,
+    "y": 0.3708899931738755
   },
   "FondCarte": {
     "id": "FondCarte",
-    "x": 0.05738900868746316,
-    "y": 0.7205598945048389
-  },
-  "BraceletConnecte": {
-    "id": "BraceletConnecte",
-    "x": 0.10921403644681374,
-    "y": 0.3731232756426464
-  },
-  "BalanceConnecte": {
-    "id": "BalanceConnecte",
-    "x": 0.0022680607026020483,
-    "y": 0.39737906395576655
-  },
-  "PillulierConnecte": {
-    "id": "PillulierConnecte",
-    "x": 0.2382107288393165,
-    "y": 0.38745624146403557
-  },
-  "Glycemie": {
-    "id": "Glycemie",
-    "x": 0.24372340800138942,
-    "y": 0.49109460971100344
-  },
-  "Prescription": {
-    "id": "Prescription",
-    "x": 0.49510157779190744,
-    "y": 0.5958355137903859
-  },
-  "Remboursement": {
-    "id": "Remboursement",
-    "x": 0.7161911714412106,
-    "y": 0.7692288138218195
-  },
-  "NumeroSecuriteSociale": {
-    "id": "NumeroSecuriteSociale",
-    "x": 0.6604819526540905,
-    "y": 0.42053231643647215
-  },
-  "Radiographie": {
-    "id": "Radiographie",
-    "x": 0.2558513021579494,
-    "y": 0.7204220628532303
-  },
-  "ResultatAnalyse": {
-    "id": "ResultatAnalyse",
-    "x": 0.279004554638655,
-    "y": 0.6145786229414333
-  },
-  "InterpretationAnalyse": {
-    "id": "InterpretationAnalyse",
-    "x": 0.3605922062373319,
-    "y": 0.7424727795015214
-  },
-  "CoordonneesMedecin": {
-    "id": "CoordonneesMedecin",
-    "x": 1.0424199880682807,
-    "y": 0.30710211742885907
-  },
-  "AlertePollution": {
-    "id": "AlertePollution",
-    "x": 0.07782419274748177,
-    "y": 0.7434821445455022
-  },
-  "Météo": {
-    "id": "Météo",
-    "x": 0.27655279614280825,
-    "y": 0.6629016241767258
-  },
-  "MonMedecinTraitant": {
-    "id": "MonMedecinTraitant",
-    "x": 0.6615844884865051,
-    "y": 0.5252732205158546
-  },
-  "TicketCaisse\n": {
-    "id": "TicketCaisse\n",
-    "x": 0.10318251689301652,
-    "y": 0.5091243133234299
-  },
-  "RepaCantine": {
-    "id": "RepaCantine",
-    "x": 0.16390763130038977,
-    "y": 0.09427488083019853
+    "x": 0.6119600223352891,
+    "y": 0.3783131108833135
   },
   "ReleveCompte\n": {
     "id": "ReleveCompte\n",
-    "x": 0.8430793565282948,
-    "y": 0.7090396091782687
+    "x": 0.24513164562160666,
+    "y": 0.5123532151678446
   },
-  "AnalyseSalleDeSport": {
-    "id": "AnalyseSalleDeSport",
-    "x": 1.0452171507129315,
-    "y": 0.7610273132616224
+  "TicketCaisse\n": {
+    "id": "TicketCaisse\n",
+    "x": 0.39459014978995444,
+    "y": 0.5137318904911147
   },
-  "ArretTravail": {
-    "id": "ArretTravail",
-    "x": 0.7139860997763815,
-    "y": 0.6630901995676736
+  "Domicile": {
+    "id": "Domicile",
+    "x": 0.12629746686312518,
+    "y": 0.4740027122806062
   },
-  "FeuilleSoin": {
-    "id": "FeuilleSoin",
-    "x": 0.6086627685306065,
-    "y": 0.7270372778477177
+  "EcritureBancaire": {
+    "id": "EcritureBancaire",
+    "x": 0.25779269485888334,
+    "y": 0.4962720654089201
   },
-  "AnnuaireMedecin": {
-    "id": "AnnuaireMedecin",
-    "x": 0.7757281063915965,
-    "y": 0.5164529338565381
+  "VoitureConnecte": {
+    "id": "VoitureConnecte",
+    "x": 0.40678574913181365,
+    "y": 0.37251668237149715
   },
   "CompositionProduit": {
     "id": "CompositionProduit",
-    "x": -0.0037634588511952123,
-    "y": 0.52125220747999
+    "x": 0.4922171258435595,
+    "y": 0.5161710112014475
   },
-  "GroupeSanguin": {
-    "id": "GroupeSanguin",
-    "x": 0.5447211678984981,
-    "y": 0.4670151666432118
+  "TrajetVelo\n": {
+    "id": "TrajetVelo\n",
+    "x": 0.5651162939303722,
+    "y": 0.2741087568193123
   },
-  "Vaccin": {
-    "id": "Vaccin",
-    "x": 0.4377697145063507,
-    "y": 0.42273738810130124
+  "TrajetMetro\n": {
+    "id": "TrajetMetro\n",
+    "x": 0.5070616562260605,
+    "y": 0.37767665101089826
   }
 }

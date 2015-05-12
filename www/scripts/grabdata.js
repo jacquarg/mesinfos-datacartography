@@ -1,10 +1,11 @@
 // Define spreadsheet URL.
-var SPS_EXPE_MESINFOS = 'https://docs.google.com/a/hoodbrains.com/spreadsheets/d/11FHr8STCtM4M-Kd6jznsR9d5cP6_mzqAzlXsN5Us0PY/edit#gid=128913589'
+//var SPS_EXPE_MESINFOS = 'https://docs.google.com/a/hoodbrains.com/spreadsheets/d/11FHr8STCtM4M-Kd6jznsR9d5cP6_mzqAzlXsN5Us0PY/edit#gid=128913589'
+var SPS_EXPE_MESINFOS = 'https://docs.google.com/a/hoodbrains.com/spreadsheets/d/11FHr8STCtM4M-Kd6jznsR9d5cP6_mzqAzlXsN5Us0PY/edit#gid=1283790985'
 
 // $('#graph-container').
-function fetchFromSpreadsheet(callback) {
+function fetchFromSpreadsheet(spreadSheetUri, callback) {
     sheetrock({
-        url: SPS_EXPE_MESINFOS,
+        url: spreadSheetUri,
         callback: function (error, options, response) {
             if (error) { return callback(error); }
             var metaDoctypes, err;

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>MesInfos Santé</title>
+    <script src="scripts/vendors/jquery-1.9.1.js"></script>
+    <script src="scripts/vendors/async.js"></script>
+
+    <script src="scripts/vendors/sheetrock.min.js"></script>
+
+
+    <!-- START SIGMA IMPORTS -->
+    <script src="scripts/vendors/sigma.min.js"></script>
+
+    <!-- END SIGMA IMPORTS -->
+    <script src="scripts/vendors/sigma.plugins.dragNodes.min.js"></script>
+
+    <script src="scripts/grabdata.js"></script>
+
+
+    <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+ </head>
+
+  <body>
+    <button id="show" >Afficher</button> 
+    <button id="save" href="#">Positions</button>
+    <img id="test">
+    <div id="container">
+      <div id="graph-container"></div>
+      <script>
+        window.miConfig = {
+          positionsUri: 'data/MISnodePositions.json',
+          spreadSheetUri: 'https://docs.google.com/a/hoodbrains.com/spreadsheets/d/11FHr8STCtM4M-Kd6jznsR9d5cP6_mzqAzlXsN5Us0PY/edit#gid=1283790985',
+          framesColor: '#6FA9F8',
+
+        };
+      </script>
+      <script src="scripts/main.js"></script>
+    </div>
+  </body>
+</html>
