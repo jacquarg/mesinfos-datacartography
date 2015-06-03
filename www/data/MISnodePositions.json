@@ -1,342 +1,439 @@
-{
-  "GeolocationLog": {
-    "id": "GeolocationLog",
-    "x": 0.2933018389157951,
-    "y": 0.007875198731198907
-  },
-  "Receipt": {
-    "id": "Receipt",
-    "x": 0.040542264468967915,
-    "y": 0.7101895925588906
-  },
-  "VideoOnDemand": {
-    "id": "VideoOnDemand",
-    "x": 0.4584673473145813,
-    "y": 0.32972230459563434
-  },
-  "Claim": {
-    "id": "Claim",
-    "x": 0.8319435599260032,
-    "y": 0.9634527461603284
-  },
-  "BankProduct": {
-    "id": "BankProduct",
-    "x": 0.0510178511030972,
-    "y": 0.9777483644429594
-  },
-  "BankAccount": {
-    "id": "BankAccount",
-    "x": 0.6198289969470352,
-    "y": 0.7546725764404982
-  },
-  "Proposal": {
-    "id": "Proposal",
-    "x": 0.8560036947019398,
-    "y": 0.9382378309965134
-  },
-  "ReceiptDetail": {
-    "id": "ReceiptDetail",
-    "x": 0.5660591807682067,
-    "y": 0.2351491074077785
-  },
-  "BankOperation": {
-    "id": "BankOperation",
-    "x": 0.6927927911747247,
-    "y": 0.8798203035257757
-  },
-  "PhoneCommunicationLog": {
-    "id": "PhoneCommunicationLog",
-    "x": -0.44249548547103634,
-    "y": 0.3052434733944932
-  },
-  "PersonIncome": {
-    "id": "PersonIncome",
-    "x": 0.37066326616331935,
-    "y": 0.9294692783150822
-  },
-  "alarm": {
-    "id": "alarm",
-    "x": 0.24085788545198739,
-    "y": 0.6861382536590099
-  },
-  "# Todo list contains tasks. Each tasks are linked inside todo list.": {
-    "id": "# Todo list contains tasks. Each tasks are linked inside todo list.",
-    "x": 0.9308308197651058,
-    "y": 0.8129729114007205
-  },
-  "Note": {
-    "id": "Note",
-    "x": 0.8845588238909841,
-    "y": 0.6962547861039639
-  },
-  "Photo": {
-    "id": "Photo",
-    "x": 0.5098020434379578,
-    "y": 0.8159947297535837
-  },
-  "Album": {
-    "id": "Album",
-    "x": 0.5168122423347086,
-    "y": 0.12716982560232282
-  },
-  "Contact": {
-    "id": "Contact",
-    "x": 0.9586602449417114,
-    "y": 0.4707135632634163
-  },
-  "Notifications": {
-    "id": "Notifications",
-    "x": 0.04108056775294244,
-    "y": 0.7416948343161494
-  },
-  "User": {
-    "id": "User",
-    "x": 0.5730977850034833,
-    "y": 0.009536407422274351
-  },
-  "Mail": {
-    "id": "Mail",
-    "x": 0.8300455820281059,
-    "y": 0.48586161620914936
-  },
-  "# Base object, user manage tasks": {
-    "id": "# Base object, user manage tasks",
-    "x": 0.19585894187912345,
-    "y": 0.24711357685737312
-  },
-  "RiskVehicle": {
-    "id": "RiskVehicle",
-    "x": 0.28185057803057134,
-    "y": 0.7350029652006924
-  },
-  "InsuranceScoring": {
-    "id": "InsuranceScoring",
-    "x": 0.13854266609996557,
-    "y": 0.9800829228479415
-  },
-  "Tarification": {
-    "id": "Tarification",
-    "x": 0.7366505130194128,
-    "y": 0.0431552161462605
-  },
-  "Risk": {
-    "id": "Risk",
-    "x": 0.23062626621685922,
-    "y": 0.11460075271315873
-  },
-  "Quittance": {
-    "id": "Quittance",
-    "x": 0.1843698474112898,
-    "y": 0.982641204725951
-  },
-  "InsuranceContract": {
-    "id": "InsuranceContract",
-    "x": 0.9687443647999316,
-    "y": 0.5577124950941652
-  },
-  "Savings": {
-    "id": "Savings",
-    "x": 0.7551060717087239,
-    "y": 0.5421697301790118
-  },
-  "Contract": {
-    "id": "Contract",
-    "x": 0.3531620348803699,
-    "y": 0.43309144326485693
-  },
-  "HomeInsuranceContract": {
-    "id": "HomeInsuranceContract",
-    "x": 0.7136461760383099,
-    "y": 0.01779771945439279
-  },
-  "Person": {
-    "id": "Person",
-    "x": 0.9815646267961711,
-    "y": 0.38969334913417697
-  },
-  "Premiums": {
-    "id": "Premiums",
-    "x": 0.1816007497254759,
-    "y": 0.2623398087453097
-  },
-  "Client": {
-    "id": "Client",
-    "x": 0.8436673702672124,
-    "y": 0.2339637374971062
-  },
-  "Vehicle": {
-    "id": "Vehicle",
-    "x": 0.5852261343970895,
-    "y": 0.5870387405157089
-  },
-  "RiskHome": {
-    "id": "RiskHome",
-    "x": 0.4224725137464702,
-    "y": 0.29728135373443365
-  },
-  "Home": {
-    "id": "Home",
-    "x": 0.9254924517590553,
-    "y": 0.6905192073900253
-  },
-  "CarInsuranceContract": {
-    "id": "CarInsuranceContract",
-    "x": 0.07746681640855968,
-    "y": 0.6786198555491865
-  },
-  "InsuranceClaim": {
-    "id": "InsuranceClaim",
-    "x": 0.5288101609330624,
-    "y": 0.6056516896933317
-  },
-  "ConsoElectrique": {
-    "id": "ConsoElectrique",
-    "x": 0.20512881023101323,
-    "y": 0.32346475088677257
-  },
-  "ConsoGaz": {
-    "id": "ConsoGaz",
-    "x": 0.3958675092387309,
-    "y": 0.3278748942164308
-  },
-  "Geolocalisation": {
-    "id": "Geolocalisation",
-    "x": 0.09215715856887097,
-    "y": 0.6403260773807619
-  },
-  "JournalAppel": {
-    "id": "JournalAppel",
-    "x": 0.6323221928905696,
-    "y": 0.6153712978120893
-  },
-  "Meteo": {
-    "id": "Meteo",
-    "x": -0.014346018325878743,
-    "y": 0.6670122612372258
-  },
-  "FondCarte": {
-    "id": "FondCarte",
-    "x": 0.05738900868746316,
-    "y": 0.7205598945048389
-  },
-  "BraceletConnecte": {
+﻿[
+  {
     "id": "BraceletConnecte",
+    "type": "personnelle",
     "x": 0.10921403644681374,
-    "y": 0.3731232756426464
+    "y": 0.3731232756426464,
+    "size": 50,
+    "data": {
+      "type": "BraceletConnecte",
+      "contexte": "Les données de bracelets connectés",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "pouls",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "BalanceConnectee": {
+  {
     "id": "BalanceConnectee",
+    "type": "personnelle",
     "x": 0.0022680607026020483,
-    "y": 0.39737906395576655
+    "y": 0.39737906395576655,
+    "size": 50,
+    "data": {
+      "type": "BalanceConnectee",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "PillulierConnecte": {
+  {
     "id": "PillulierConnecte",
+    "type": "personnelle",
     "x": 0.2382107288393165,
-    "y": 0.38745624146403557
+    "y": 0.38745624146403557,
+    "size": 50,
+    "data": {
+      "type": "PillulierConnecte",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "Glycemie": {
+  {
     "id": "Glycemie",
+    "type": "personnelle",
     "x": 0.24372340800138942,
-    "y": 0.49109460971100344
+    "y": 0.49109460971100344,
+    "size": 50,
+    "data": {
+      "type": "Glycemie",
+      "contexte": "D'un appareil personnel de mesure de glycémie",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "Prescription": {
+  {
     "id": "Prescription",
+    "type": "personnelle",
     "x": 0.49510157779190744,
-    "y": 0.5958355137903859
+    "y": 0.5958355137903859,
+    "size": 50,
+    "data": {
+      "type": "Prescription",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "Remboursement": {
+  {
     "id": "Remboursement",
+    "type": "personnelle",
     "x": 0.7161911714412106,
-    "y": 0.7692288138218195
+    "y": 0.7692288138218195,
+    "size": 50,
+    "data": {
+      "type": "Remboursement",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "NumeroSecuriteSociale": {
+  {
     "id": "NumeroSecuriteSociale",
+    "type": "personnelle",
     "x": 0.6604819526540905,
-    "y": 0.42053231643647215
+    "y": 0.42053231643647215,
+    "size": 50,
+    "data": {
+      "type": "NumeroSecuriteSociale",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "Radiographie": {
+  {
     "id": "Radiographie",
+    "type": "personnelle",
     "x": 0.2558513021579494,
-    "y": 0.7204220628532303
+    "y": 0.7204220628532303,
+    "size": 50,
+    "data": {
+      "type": "Radiographie",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "ResultatAnalyse": {
+  {
     "id": "ResultatAnalyse",
+    "type": "personnelle",
     "x": 0.279004554638655,
-    "y": 0.6145786229414333
+    "y": 0.6145786229414333,
+    "size": 50,
+    "data": {
+      "type": "ResultatAnalyse",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "InterpretationAnalyse": {
+  {
     "id": "InterpretationAnalyse",
+    "type": "personnelle",
     "x": 0.3605922062373319,
-    "y": 0.7424727795015214
+    "y": 0.7424727795015214,
+    "size": 50,
+    "data": {
+      "type": "InterpretationAnalyse",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "CoordonneesMedecin": {
-    "id": "CoordonneesMedecin",
-    "x": 1.0424199880682807,
-    "y": 0.30710211742885907
-  },
-  "AlertePollution": {
-    "id": "AlertePollution",
-    "x": 0.07782419274748177,
-    "y": 0.7434821445455022
-  },
-  "Météo": {
-    "id": "Météo",
-    "x": 0.27655279614280825,
-    "y": 0.6629016241767258
-  },
-  "MonMedecinTraitant": {
-    "id": "MonMedecinTraitant",
-    "x": 0.6615844884865051,
-    "y": 0.5252732205158546
-  },
-  "TicketCaisse\n": {
-    "id": "TicketCaisse\n",
-    "x": 0.10318251689301652,
-    "y": 0.5091243133234299
-  },
-  "RepaCantine": {
-    "id": "RepaCantine",
-    "x": 0.16390763130038977,
-    "y": 0.09427488083019853
-  },
-  "ReleveCompte\n": {
-    "id": "ReleveCompte\n",
-    "x": 0.8430793565282948,
-    "y": 0.7090396091782687
-  },
-  "AnalyseSalleDeSport": {
-    "id": "AnalyseSalleDeSport",
-    "x": 1.0452171507129315,
-    "y": 0.7610273132616224
-  },
-  "ArretTravail": {
-    "id": "ArretTravail",
-    "x": 0.7139860997763815,
-    "y": 0.6630901995676736
-  },
-  "FeuilleSoin": {
-    "id": "FeuilleSoin",
-    "x": 0.6086627685306065,
-    "y": 0.7270372778477177
-  },
-  "AnnuaireMedecin": {
+  {
     "id": "AnnuaireMedecin",
+    "type": "personnelle",
     "x": 0.7757281063915965,
-    "y": 0.5164529338565381
+    "y": 0.5164529338565381,
+    "size": 50,
+    "data": {
+      "type": "AnnuaireMedecin",
+      "genre": "referentiel",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "CompositionProduit": {
+  {
+    "id": "AlertePollution",
+    "type": "personnelle",
+    "x": 0.07782419274748177,
+    "y": 0.7434821445455022,
+    "size": 50,
+    "data": {
+      "type": "AlertePollution",
+      "genre": "open",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "Meteo",
+    "type": "personnelle",
+    "x": -0.014346018325878743,
+    "y": 0.6670122612372258,
+    "size": 50,
+    "data": {
+      "type": "Meteo",
+      "genre": "open",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "MonMedecinTraitant",
+    "type": "personnelle",
+    "x": 0.6615844884865051,
+    "y": 0.5252732205158546,
+    "size": 50,
+    "data": {
+      "type": "MonMedecinTraitant",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "TicketCaisse\n",
+    "type": "personnelle",
+    "x": 0.10318251689301652,
+    "y": 0.5091243133234299,
+    "size": 50,
+    "data": {
+      "type": "TicketCaisse\n",
+      "contexte": "Parapharmacie et alimentation",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "RepaCantine",
+    "type": "personnelle",
+    "x": 0.16390763130038977,
+    "y": 0.09427488083019853,
+    "size": 50,
+    "data": {
+      "type": "RepaCantine",
+      "genre": "personnelle\n",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "EcritureBancaire",
+    "type": "personnelle",
+    "x": 0.018600011244416237,
+    "y": 0.3498155018314719,
+    "size": 50,
+    "data": {
+      "type": "EcritureBancaire",
+      "contexte": "Achat pharmacie, ...",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "Geolocalisation",
+    "type": "personnelle",
+    "x": 0.09215715856887097,
+    "y": 0.6403260773807619,
+    "size": 50,
+    "data": {
+      "type": "Geolocalisation",
+      "contexte": "QS (distance parcouru, ...). Passé dans \n",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "ArretTravail",
+    "type": "personnelle",
+    "x": 0.7139860997763815,
+    "y": 0.6630901995676736,
+    "size": 50,
+    "data": {
+      "type": "ArretTravail",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "FeuilleSoin",
+    "type": "personnelle",
+    "x": 0.6086627685306065,
+    "y": 0.7270372778477177,
+    "size": 50,
+    "data": {
+      "type": "FeuilleSoin",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
+  },
+  {
     "id": "CompositionProduit",
+    "type": "personnelle",
     "x": -0.0037634588511952123,
-    "y": 0.52125220747999
+    "y": 0.52125220747999,
+    "size": 50,
+    "data": {
+      "type": "CompositionProduit",
+      "contexte": "OpenFoodFacts",
+      "genre": "referentiel",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "GroupeSanguin": {
+  {
     "id": "GroupeSanguin",
+    "type": "personnelle",
     "x": 0.5447211678984981,
-    "y": 0.4670151666432118
+    "y": 0.4670151666432118,
+    "size": 50,
+    "data": {
+      "type": "GroupeSanguin",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   },
-  "Vaccin": {
+  {
     "id": "Vaccin",
+    "type": "personnelle",
     "x": 0.4377697145063507,
-    "y": 0.42273738810130124
+    "y": 0.42273738810130124,
+    "size": 50,
+    "data": {
+      "type": "Vaccin",
+      "genre": "personnelle",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "Medicament",
+    "type": "personnelle",
+    "x": 0.488427592208609,
+    "y": 0.2433941476047039,
+    "size": 50,
+    "data": {
+      "type": "Medicament",
+      "fields": [
+        {
+          "champs": "",
+          "champsType": "",
+          "champsDescription": ""
+        }
+      ]
+    }
   }
-}
+]

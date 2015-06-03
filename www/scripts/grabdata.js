@@ -4,6 +4,11 @@ var SPS_EXPE_MESINFOS = 'https://docs.google.com/a/hoodbrains.com/spreadsheets/d
 
 // $('#graph-container').
 function fetchFromSpreadsheet(spreadSheetUri, callback) {
+    // STUB
+    // $.getJSON('data/MIS-datamodel.json', function(json) { callback(null, json); });
+    // return
+    // // END Stub
+
     sheetrock({
         url: spreadSheetUri,
         callback: function (error, options, response) {
@@ -44,6 +49,12 @@ var rows2MetaDoctype = function(rows) {
 
             currentDT = $.extend({}, true, row);
 
+            // Clean empty keys
+            for (k in currentDT) {
+                if (currentDT[k] == null || currentDT[k] === "") {
+                    delete currentDT[k];
+                }
+            }
             for (k in fieldsCol) {
                 delete currentDT[k];
             }

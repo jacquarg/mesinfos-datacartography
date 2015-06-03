@@ -9,13 +9,6 @@ var nodePositionByIds = {};
 
 async.parallel([
   function(cb) {
-    fetchFromSpreadsheet(miConfig.spreadSheetUri, cb);
-  },
-  // function(cb) {
-  //   $.getJSON("datamodels/all_metadoctypes.json",
-  //       function(metaDocTypes) { cb(null, metaDocTypes); });
-  // },
-  function(cb) {
     $.getJSON(miConfig.positionsUri,
       function(data) { cb(null, data); });
   },
@@ -33,15 +26,15 @@ async.parallel([
   },
   ],
   function(err, results) {
-      var metaDocTypes = results[0];
-    nodePositionByIds = results[1];
+    g.nodes = results[0];
     templates = {
-        personnelle: results[2],
-        open: results[3],
-        referentiel: results[4],
+        personnelle: results[1],
+        open: results[2],
+        referentiel: results[3],
     }
-    // STAMP_TMPL = results[2]; // TODO parametric.
 
+    // Skip, only on Spreadsheet load !
+    /*
     var skip = {
 'Risk':true,
 '# Base object, user manage tasks':true,
@@ -75,19 +68,17 @@ async.parallel([
     // skip doctypes :
     metaDocTypes = metaDocTypes.filter(function(mDT) { return !(mDT.related in skip); })
 
-
-
-    // displayJSON(data);
     g.nodes = metaDocTypes.map(metaDocType2Node);
-    async.map(metaDocTypes, generateSVG, function(err, results) {
-      metaDocTypes = results;
+    // END skip
+    */
+
+    async.map(g.nodes, generateSVG, function(err, results) {
       show();});
-    // metaDocTypes.forEach(generateSVG);
 
 
     // $("#test").attr("src", data[0].stampImg.src);
     for (var i=0; i< g.nodes.length; i++) {
-      node = g.nodes[i];
+      var node = g.nodes[i];
       if (node.id in nodePositionByIds) {
         node.x = nodePositionByIds[node.id].x;
         node.y = nodePositionByIds[node.id].y;
@@ -111,7 +102,7 @@ var metaDocType2Node = function(metaDocType) {
 
     x: Math.random(), //TODO
     y: Math.random(), // TODO
-    size: 50,
+    size: 100,
     data: metaDocType,
   };
 
@@ -126,7 +117,8 @@ var type2DisplayName = function(type) {
     }
 };
 
-var generateSVG = function(metaDocType, callback) {
+var generateSVG = function(node, callback) {
+    var metaDocType = node.data;
     var template = templates[metaDocType.genre];
   $.ajax({
       url: 'img/Logos_doctypes/' + metaDocType.type.toLowerCase() + '.svg',
@@ -155,13 +147,13 @@ var generateSVG = function(metaDocType, callback) {
     var mySrc = 'data:image/svg+xml;charset=utf-8,' + mySVG;
 
   // Load up our image.
-  metaDocType.stampImg = new Image();
+  node.stampImg = new Image();
 
   if (callback) {
-    metaDocType.stampImg.onload = callback;
+    node.stampImg.onload = callback;
   }
 
-  metaDocType.stampImg.src = mySrc;
+  node.stampImg.src = mySrc;
   // Then should wait for "onLoad"
   };
 };
@@ -202,7 +194,7 @@ sigma.canvas.nodes.personnelle = (function() {
     context.save();
     try {
     context.drawImage(
-        node.data.stampImg,
+        node.stampImg,
         node[prefix + 'x'] - size,
         node[prefix + 'y'] - size,
         2 * size,
@@ -219,13 +211,33 @@ sigma.canvas.nodes.personnelle = (function() {
 })();
 
 $("#save").click(function() {
-  displayJSON(nodePositionByIds);
+
+    // displayJSON(nodePositionByIds);
+    // var blob = new Blob([JSON.stringify(nodePositionByIds, null, 2)], {type: "text/json;charset=utf-8"});
+    // saveAs(blob, "disposition.json");
+    var e = g.nodes.map(function(node) {
+        var eNode = $.extend({}, true, node);
+        eNode.stampImg = undefined;
+        return eNode;
+    });
+    displayJSON(e);
+
+    var blob = new Blob([JSON.stringify(e, null, 2)], {type: "text/json;charset=utf-8"});
+    saveAs(blob, "datacarto.json");
 });
+
+$("#load").click(function() {
+    updateDataModelFromSS();
+});
+
 
 var s;
 $("#show").click(function() { show(); });
 
 var show = function() {
+
+    // Clean container
+    $('#graph-container').empty();
 
   s = new sigma({
     graph: g,
@@ -256,6 +268,68 @@ var show = function() {
     var n = nodePositionByIds[eN.id];
     n.x = eN.x;
     n.y = eN.y;
+
+  });
+
+};
+
+var updateDataModelFromSS = function() {
+  fetchFromSpreadsheet(miConfig.spreadSheetUri, function(err, metaDocTypes) {
+
+    // Skip, only on Spreadsheet load !
+//     var skip = {
+// 'Risk':true,
+// '# Base object, user manage tasks':true,
+// 'User':true,
+// 'Album':true,
+// 'HomeInsuranceContract':true,
+// 'Client':true,
+// 'RiskHome':true,
+// 'Contract':true,
+// 'Person':true,
+// 'Mail':true,
+// 'Contact':true,
+// 'CarInsuranceContract':true,
+// 'InsuranceScoring':true,
+// 'Quittance':true,
+// 'InsuranceClaim':true,
+// 'Vehicle':true,
+// 'RiskVehicle':true,
+// 'Savings':true,
+// 'InsuranceContract':true,
+// 'Home':true,
+// 'Premiums': true,
+// 'Tarification': true,
+// 'Notifications': true,
+// 'Note': true,
+// 'Photo': true,
+// '# Todo list contains tasks. Each tasks are linked inside todo list.': true,
+// 'Notifications': true,
+// };
+
+//     // skip doctypes :
+//     metaDocTypes = metaDocTypes.filter(function(mDT) { return !(mDT.related in skip); })
+
+    // g.nodes = metaDocTypes.map(metaDocType2Node);
+
+    // update nodes with metadoctypes <--
+    nodesByIds = {};
+    g.nodes.forEach(function(node) { nodesByIds[node.id] = node; });
+
+    metaDocTypes.forEach(function(metaDocType) {
+        if (metaDocType.type in nodesByIds) {
+            nodesByIds[metaDocType.type].data = metaDocType;
+        } else {
+            console.log(metaDocType);
+            var node = metaDocType2Node(metaDocType)
+            console.log(node);
+            g.nodes.push(node);
+        }
+    });
+
+    //Update view.
+    async.map(g.nodes, generateSVG, function(err, results) {
+      show();});
 
   });
 
